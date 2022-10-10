@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Q7SsVMy0cyivhvSSgoTXNVfRr2iz2RyMXzT7YGSw5oI=",
+  "Hash": "v8eC70XMtiYVy6TuF4zpcqXYpLrcVnvUllvXoM1HkvQ=",
   "Source": "elsewedyelectric.site",
   "BasePath": "_content/elsewedyelectric.site",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "elsewedyelectric.site\\wwwroot",
       "Source": "elsewedyelectric.site",
-      "ContentRoot": "D:\\elsewedyelectric\\elsewedyelectric.site\\wwwroot\\",
+      "ContentRoot": "D:\\sewedyproject\\elsewedyelectric.site\\wwwroot\\",
       "BasePath": "_content/elsewedyelectric.site",
       "Pattern": "**"
     }
@@ -43078,10 +43078,10 @@
       "OriginalItemSpec": "C:\\Users\\Naquib Mohammed\\.nuget\\packages\\umbraco.cms.staticassets\\10.2.1\\staticwebassets\\umbraco\\views\\users\\views\\users\\users.html"
     },
     {
-      "Identity": "D:\\elsewedyelectric\\elsewedyelectric.site\\wwwroot\\favicon.ico",
+      "Identity": "D:\\sewedyproject\\elsewedyelectric.site\\wwwroot\\favicon.ico",
       "SourceId": "elsewedyelectric.site",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\elsewedyelectric\\elsewedyelectric.site\\wwwroot\\",
+      "ContentRoot": "D:\\sewedyproject\\elsewedyelectric.site\\wwwroot\\",
       "BasePath": "_content/elsewedyelectric.site",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
