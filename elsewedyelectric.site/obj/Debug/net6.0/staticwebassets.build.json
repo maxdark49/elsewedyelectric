@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LTVJxEO4+sSduQBL5Ax0Nmt2aW2dB3mg4mNWhc+HahM=",
+  "Hash": "bInu0eGI1xjkMeIN6bBE/eTa0qhVnm5i5OGAf+ioxnU=",
   "Source": "elsewedyelectric.site",
   "BasePath": "_content/elsewedyelectric.site",
   "Mode": "Default",
@@ -43212,6 +43212,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\sewedyproject\\elsewedyelectric.site\\wwwroot\\index.html",
+      "SourceId": "elsewedyelectric.site",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\sewedyproject\\elsewedyelectric.site\\wwwroot\\",
+      "BasePath": "_content/elsewedyelectric.site",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
       "Identity": "D:\\sewedyproject\\elsewedyelectric.site\\wwwroot\\js\\scripts.js",
