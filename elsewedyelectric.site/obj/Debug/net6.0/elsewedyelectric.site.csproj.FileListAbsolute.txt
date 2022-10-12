@@ -1144,3 +1144,10 @@ D:\sewedyproject\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\ContentTypes\im
 D:\sewedyproject\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\ContentTypes\blockvisibilitysettin.config
 D:\sewedyproject\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\ContentTypes\imagerowsettings.config
 D:\sewedyproject\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\ContentTypes\richtextrowsettings.config
+D:\sewedyproject\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\Content\about-us.config
+D:\sewedyproject\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\Content\الصفحة-الرئيسية.config
+D:\sewedyproject\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\Content\عنا.config
+D:\sewedyproject\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\Domains\https-localhost-44303-ar_ar-eg.config
+D:\sewedyproject\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\Domains\https-localhost-44303_en-us.config
+D:\sewedyproject\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\Domains\https-localhost-44303-fr_fr.config
+D:\sewedyproject\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\Languages\fr.config
