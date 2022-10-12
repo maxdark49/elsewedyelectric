@@ -35,20 +35,22 @@
       "elsewedyelectric.site/1.0.0": {
         "dependencies": {
           "Microsoft.ICU.ICU4C.Runtime": "68.2.0.9",
+          "Our.Umbraco.Community.Contentment": "4.1.5",
           "Umbraco.Cms": "10.2.1",
+          "uSync": "10.2.1",
           "Microsoft.AspNetCore.Antiforgery": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.Core": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.OAuth": "6.0.0.0",
-          "Microsoft.AspNetCore.Authorization": "6.0.0.0",
+          "Microsoft.AspNetCore.Authorization.Reference": "6.0.0.0",
           "Microsoft.AspNetCore.Authorization.Policy": "6.0.0.0",
           "Microsoft.AspNetCore.Components.Authorization": "6.0.0.0",
-          "Microsoft.AspNetCore.Components": "6.0.0.0",
-          "Microsoft.AspNetCore.Components.Forms": "6.0.0.0",
+          "Microsoft.AspNetCore.Components.Reference": "6.0.0.0",
+          "Microsoft.AspNetCore.Components.Forms.Reference": "6.0.0.0",
           "Microsoft.AspNetCore.Components.Server": "6.0.0.0",
-          "Microsoft.AspNetCore.Components.Web": "6.0.0.0",
+          "Microsoft.AspNetCore.Components.Web.Reference": "6.0.0.0",
           "Microsoft.AspNetCore.Connections.Abstractions": "6.0.0.0",
           "Microsoft.AspNetCore.CookiePolicy": "6.0.0.0",
           "Microsoft.AspNetCore.Cors": "6.0.0.0",
@@ -79,7 +81,7 @@
           "Microsoft.AspNetCore.Identity": "6.0.0.0",
           "Microsoft.AspNetCore.Localization": "6.0.0.0",
           "Microsoft.AspNetCore.Localization.Routing": "6.0.0.0",
-          "Microsoft.AspNetCore.Metadata": "6.0.0.0",
+          "Microsoft.AspNetCore.Metadata.Reference": "6.0.0.0",
           "Microsoft.AspNetCore.Mvc.Abstractions": "6.0.0.0",
           "Microsoft.AspNetCore.Mvc.ApiExplorer": "6.0.0.0",
           "Microsoft.AspNetCore.Mvc.Core": "6.0.0.0",
@@ -161,7 +163,7 @@
           "Microsoft.Extensions.Options.Reference": "6.0.0.0",
           "Microsoft.Extensions.Primitives.Reference": "6.0.0.0",
           "Microsoft.Extensions.WebEncoders": "6.0.0.0",
-          "Microsoft.JSInterop": "6.0.0.0",
+          "Microsoft.JSInterop.Reference": "6.0.0.0",
           "Microsoft.Net.Http.Headers": "6.0.0.0",
           "Microsoft.VisualBasic.Core": "11.0.0.0",
           "Microsoft.VisualBasic": "10.0.0.0",
@@ -431,7 +433,7 @@
       },
       "Examine.Core/3.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "runtime": {
@@ -695,6 +697,58 @@
           "lib/netstandard2.0/MessagePack.Annotations.dll": {}
         }
       },
+      "Microsoft.AspNetCore.Authorization/6.0.4": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Metadata": "6.0.4",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Authorization.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.422.17204"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components/6.0.4": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "6.0.4",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.4"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.422.17204"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.4": {},
+      "Microsoft.AspNetCore.Components.Forms/6.0.4": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.4"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Components.Forms.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.422.17204"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components.Web/6.0.4": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.4",
+          "Microsoft.AspNetCore.Components.Forms": "6.0.4",
+          "Microsoft.Extensions.DependencyInjection": "6.0.0",
+          "Microsoft.JSInterop": "6.0.4",
+          "System.IO.Pipelines": "6.0.2"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Components.Web.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.422.17204"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/6.0.5": {
         "runtime": {
           "lib/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
@@ -720,7 +774,7 @@
           "Microsoft.AspNetCore.DataProtection.Abstractions": "5.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "Microsoft.Extensions.Hosting.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
           "Microsoft.Extensions.Options": "6.0.0",
           "Microsoft.Win32.Registry": "5.0.0",
           "System.Security.Cryptography.Xml": "5.0.0"
@@ -734,7 +788,7 @@
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1"
         }
       },
       "Microsoft.AspNetCore.Hosting.Server.Abstractions/1.0.2": {
@@ -756,7 +810,7 @@
       "Microsoft.AspNetCore.Http.Features/5.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "6.0.0",
-          "System.IO.Pipelines": "5.0.0"
+          "System.IO.Pipelines": "6.0.2"
         }
       },
       "Microsoft.AspNetCore.JsonPatch/6.0.5": {
@@ -772,6 +826,14 @@
         },
         "compile": {
           "lib/net6.0/Microsoft.AspNetCore.JsonPatch.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Metadata/6.0.4": {
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.422.17204"
+          }
         }
       },
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson/6.0.5": {
@@ -1165,7 +1227,7 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "Microsoft.Extensions.Logging": "6.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
           "Microsoft.Extensions.Options": "6.0.0"
         }
       },
@@ -1199,12 +1261,19 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
           "Microsoft.Extensions.Options": "6.0.0",
           "System.Diagnostics.DiagnosticSource": "6.0.0"
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.0": {},
+      "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.322.12309"
+          }
+        }
+      },
       "Microsoft.Extensions.Options/6.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
@@ -1444,6 +1513,14 @@
           "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {}
         }
       },
+      "Microsoft.JSInterop/6.0.4": {
+        "runtime": {
+          "lib/net6.0/Microsoft.JSInterop.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.422.17204"
+          }
+        }
+      },
       "Microsoft.NETCore.Platforms/5.0.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
       "Microsoft.Win32.Primitives/4.3.0": {
@@ -1672,6 +1749,26 @@
           "lib/netstandard2.0/NUglify.dll": {}
         }
       },
+      "Our.Umbraco.Community.Contentment/4.1.5": {
+        "dependencies": {
+          "Our.Umbraco.Community.Contentment.Core": "4.1.5"
+        }
+      },
+      "Our.Umbraco.Community.Contentment.Core/4.1.5": {
+        "dependencies": {
+          "Umbraco.Cms.Web.BackOffice": "10.2.1",
+          "Umbraco.Cms.Web.Website": "10.2.1"
+        },
+        "runtime": {
+          "lib/net6.0/Umbraco.Community.Contentment.dll": {
+            "assemblyVersion": "4.1.5.0",
+            "fileVersion": "4.1.5.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/Umbraco.Community.Contentment.dll": {}
+        }
+      },
       "Polly/7.2.2": {
         "runtime": {
           "lib/netstandard2.0/Polly.dll": {
@@ -1821,7 +1918,7 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "Microsoft.Extensions.Hosting.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
           "Serilog": "2.11.0",
           "Serilog.Extensions.Logging": "3.1.0"
         },
@@ -2016,7 +2113,7 @@
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
           "Microsoft.Extensions.FileProviders.Composite": "5.0.0",
           "Microsoft.Extensions.Hosting.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
           "Microsoft.Extensions.Options": "6.0.0"
         },
         "runtime": {
@@ -2445,7 +2542,14 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.IO.Pipelines/5.0.0": {},
+      "System.IO.Pipelines/6.0.2": {
+        "runtime": {
+          "lib/net6.0/System.IO.Pipelines.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.222.6406"
+          }
+        }
+      },
       "System.Linq/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -3219,6 +3323,84 @@
           "lib/net6.0/Umbraco.Web.Website.dll": {}
         }
       },
+      "uSync/10.2.1": {
+        "dependencies": {
+          "uSync.BackOffice": "10.2.1",
+          "uSync.BackOffice.Assets": "10.2.1"
+        },
+        "runtime": {
+          "lib/net6.0/uSync.dll": {
+            "assemblyVersion": "10.2.1.0",
+            "fileVersion": "10.2.1.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/uSync.dll": {}
+        }
+      },
+      "uSync.BackOffice/10.2.1": {
+        "dependencies": {
+          "Umbraco.Cms.Web.BackOffice": "10.2.1",
+          "Umbraco.Cms.Web.Website": "10.2.1",
+          "uSync.Community.Contrib": "10.2.1",
+          "uSync.Core": "10.2.1"
+        },
+        "runtime": {
+          "lib/net6.0/uSync.BackOffice.dll": {
+            "assemblyVersion": "10.2.1.0",
+            "fileVersion": "10.2.1.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/uSync.BackOffice.dll": {}
+        }
+      },
+      "uSync.BackOffice.Assets/10.2.1": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "6.0.4",
+          "Umbraco.Cms.Web.BackOffice": "10.2.1",
+          "uSync.BackOffice": "10.2.1"
+        },
+        "runtime": {
+          "lib/net6.0/uSync.Backoffice.Assets.dll": {
+            "assemblyVersion": "10.2.1.0",
+            "fileVersion": "10.2.1.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/uSync.Backoffice.Assets.dll": {}
+        }
+      },
+      "uSync.Community.Contrib/10.2.1": {
+        "dependencies": {
+          "Umbraco.Cms.Web.BackOffice": "10.2.1",
+          "Umbraco.Cms.Web.Website": "10.2.1",
+          "uSync.Core": "10.2.1"
+        },
+        "runtime": {
+          "lib/net6.0/uSync.Community.Contrib.dll": {
+            "assemblyVersion": "10.2.1.0",
+            "fileVersion": "10.2.1.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/uSync.Community.Contrib.dll": {}
+        }
+      },
+      "uSync.Core/10.2.1": {
+        "dependencies": {
+          "Umbraco.Cms.Web.Website": "10.2.1"
+        },
+        "runtime": {
+          "lib/net6.0/uSync.Core.dll": {
+            "assemblyVersion": "10.2.1.0",
+            "fileVersion": "10.2.1.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/uSync.Core.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/6.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -3255,7 +3437,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.AspNetCore.Authorization/6.0.0.0": {
+      "Microsoft.AspNetCore.Authorization.Reference/6.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Authorization.dll": {}
         },
@@ -3273,13 +3455,13 @@
         },
         "compileOnly": true
       },
-      "Microsoft.AspNetCore.Components/6.0.0.0": {
+      "Microsoft.AspNetCore.Components.Reference/6.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Components.dll": {}
         },
         "compileOnly": true
       },
-      "Microsoft.AspNetCore.Components.Forms/6.0.0.0": {
+      "Microsoft.AspNetCore.Components.Forms.Reference/6.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Components.Forms.dll": {}
         },
@@ -3291,7 +3473,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.AspNetCore.Components.Web/6.0.0.0": {
+      "Microsoft.AspNetCore.Components.Web.Reference/6.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Components.Web.dll": {}
         },
@@ -3477,7 +3659,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.AspNetCore.Metadata/6.0.0.0": {
+      "Microsoft.AspNetCore.Metadata.Reference/6.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Metadata.dll": {}
         },
@@ -3969,7 +4151,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.JSInterop/6.0.0.0": {
+      "Microsoft.JSInterop.Reference/6.0.0.0": {
         "compile": {
           "Microsoft.JSInterop.dll": {}
         },
@@ -5130,6 +5312,41 @@
       "path": "messagepack.annotations/2.3.85",
       "hashPath": "messagepack.annotations.2.3.85.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Authorization/6.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZufyK5u4rneCu7Xq9Dan4XggNANWgGpj4BvHhOof5tIZQgjWTU18oRlg5xtuBDHsfl03BwnxxWgNjN5TO59wEw==",
+      "path": "microsoft.aspnetcore.authorization/6.0.4",
+      "hashPath": "microsoft.aspnetcore.authorization.6.0.4.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components/6.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QX8RhqjKQEBmAIzgmKLVYcw1HUION9tWUz0bQTDeHj9F05/YfohR8YiSPlTK4mTDk6S8WTi70qxNuGTWvgO1PQ==",
+      "path": "microsoft.aspnetcore.components/6.0.4",
+      "hashPath": "microsoft.aspnetcore.components.6.0.4.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components.Analyzers/6.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xwzDR3aObo+Lhz3Ff7j9NQRukvklIeMlig2lANZ0VULSwXB0aW+W7xl7ssSe3xLDMpyhCjOTgcA/1zXIPdMTyg==",
+      "path": "microsoft.aspnetcore.components.analyzers/6.0.4",
+      "hashPath": "microsoft.aspnetcore.components.analyzers.6.0.4.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components.Forms/6.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HDRfrmQYrkRwAWOYgQL6EXwNE7vU6+IcnVXet0lIbPqITbeZiPWCQ6SUEzFz806f/h4ozXaN4Bn3/Ce+RjuZxw==",
+      "path": "microsoft.aspnetcore.components.forms/6.0.4",
+      "hashPath": "microsoft.aspnetcore.components.forms.6.0.4.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components.Web/6.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w1IDipPk1gEvLX3HG8HBB1idcyyBJtnb6I/xygzWlYSenpOVSyyjvk8UC0a5TsbPgmjNy4jMtpXVkOFAOkQopw==",
+      "path": "microsoft.aspnetcore.components.web/6.0.4",
+      "hashPath": "microsoft.aspnetcore.components.web.6.0.4.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Cryptography.Internal/6.0.5": {
       "type": "package",
       "serviceable": true,
@@ -5192,6 +5409,13 @@
       "sha512": "sha512-kxQR7xCm9pQxnM3UZBp45Z470LFa1VA0qG/hFKhpE5hOJKgLOu4zmxakoVqswptAnHuD6ghd7XGb7hm1s1D0lw==",
       "path": "microsoft.aspnetcore.jsonpatch/6.0.5",
       "hashPath": "microsoft.aspnetcore.jsonpatch.6.0.5.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Metadata/6.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/zyy+N/8155mbDqKCVrXLA4fNQYRbQe6jduA0WnZYMrSfLfrt0/QmQ+KaYGBir9w0xHrWtZ3LY8zAE1RLJYvYw==",
+      "path": "microsoft.aspnetcore.metadata/6.0.4",
+      "hashPath": "microsoft.aspnetcore.metadata.6.0.4.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.NewtonsoftJson/6.0.5": {
       "type": "package",
@@ -5424,12 +5648,12 @@
       "path": "microsoft.extensions.logging/6.0.0",
       "hashPath": "microsoft.extensions.logging.6.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
+    "Microsoft.Extensions.Logging.Abstractions/6.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/HggWBbTwy8TgebGSX5DBZ24ndhzi93sHUBDvP1IxbZD7FDokYzdAr6+vbWGjw2XAfR2EJ1sfKUotpjHnFWPxA==",
-      "path": "microsoft.extensions.logging.abstractions/6.0.0",
-      "hashPath": "microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
+      "sha512": "sha512-dzB2Cgg+JmrouhjkcQGzSFjjvpwlq353i8oBQO2GWNjCXSzhbtBRUf28HSauWe7eib3wYOdb3tItdjRwAdwCSg==",
+      "path": "microsoft.extensions.logging.abstractions/6.0.1",
+      "hashPath": "microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.Options/6.0.0": {
       "type": "package",
@@ -5557,6 +5781,13 @@
       "path": "microsoft.io.recyclablememorystream/2.2.0",
       "hashPath": "microsoft.io.recyclablememorystream.2.2.0.nupkg.sha512"
     },
+    "Microsoft.JSInterop/6.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ul/BI4XudxeR1JROdq0FnMTT1YAN74q2iGeeWAzabuYyFVHtxVa8j+cYE+0KphS0c0+JkSupKCQRjhZsDw5NUg==",
+      "path": "microsoft.jsinterop/6.0.4",
+      "hashPath": "microsoft.jsinterop.6.0.4.nupkg.sha512"
+    },
     "Microsoft.NETCore.Platforms/5.0.0": {
       "type": "package",
       "serviceable": true,
@@ -5668,6 +5899,20 @@
       "sha512": "sha512-+13YE9UjnXx4+NKP+j1Axiz/QAMtK++ZtG61u9iiR2/WzPzr7EfBDOwj+xHNyTEMS9Emq/mCyWaBGjCABhC0HQ==",
       "path": "nuglify/1.13.12",
       "hashPath": "nuglify.1.13.12.nupkg.sha512"
+    },
+    "Our.Umbraco.Community.Contentment/4.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZHgMoFtNlizvtdlnWPosf5sEvRKUiNPyg8/vrpN7nBbXxM+G9/uA5xa0N1GcXRBO4uJDtO0LA8KzOBKm0mjkbg==",
+      "path": "our.umbraco.community.contentment/4.1.5",
+      "hashPath": "our.umbraco.community.contentment.4.1.5.nupkg.sha512"
+    },
+    "Our.Umbraco.Community.Contentment.Core/4.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Y0Jkuu67dHQyB7I7x41qnZmhmkYHBIyuq4rxuvbgV+cycKqMbYPqoXEmNqKkrd8DUhcPBFtVcH2If8a3EoXPFw==",
+      "path": "our.umbraco.community.contentment.core/4.1.5",
+      "hashPath": "our.umbraco.community.contentment.core.4.1.5.nupkg.sha512"
     },
     "Polly/7.2.2": {
       "type": "package",
@@ -6173,12 +6418,12 @@
       "path": "system.io.filesystem.primitives/4.3.0",
       "hashPath": "system.io.filesystem.primitives.4.3.0.nupkg.sha512"
     },
-    "System.IO.Pipelines/5.0.0": {
+    "System.IO.Pipelines/6.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-irMYm3vhVgRsYvHTU5b2gsT2CwT/SMM6LZFzuJjpIvT5Z4CshxNsaoBC1X/LltwuR3Opp8d6jOS/60WwOb7Q2Q==",
-      "path": "system.io.pipelines/5.0.0",
-      "hashPath": "system.io.pipelines.5.0.0.nupkg.sha512"
+      "sha512": "sha512-cb5OfQjnz+zjpJJei+f3QYK7+wWZrDdNHf3DykO6QCacpNZ80tuNgq1DC2kqlrjfEu+cMUTvulxPIrCMbBkjqg==",
+      "path": "system.io.pipelines/6.0.2",
+      "hashPath": "system.io.pipelines.6.0.2.nupkg.sha512"
     },
     "System.Linq/4.3.0": {
       "type": "package",
@@ -6649,6 +6894,41 @@
       "path": "umbraco.cms.web.website/10.2.1",
       "hashPath": "umbraco.cms.web.website.10.2.1.nupkg.sha512"
     },
+    "uSync/10.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cynSttvUVmEZIONPYcHIuuJU4B7jKSLWK6BSv6fvt9WUYr95pezwNUUZm5e5Vow3ftXW8eG2dvqHWqm0vCS6aQ==",
+      "path": "usync/10.2.1",
+      "hashPath": "usync.10.2.1.nupkg.sha512"
+    },
+    "uSync.BackOffice/10.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jCF236lP7z1qD3WRcX5fHS0lnXw6CpSaKCMkwy/jYigNspzHgqIvC87fnEAS4TSGuW9cEtLoU7U7nYZ9gBZhTQ==",
+      "path": "usync.backoffice/10.2.1",
+      "hashPath": "usync.backoffice.10.2.1.nupkg.sha512"
+    },
+    "uSync.BackOffice.Assets/10.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HHqllsKKDKHBXuZvuk5O/Q0FUOJ8jhp/ElxtPwKKkhyuARn1ccQyrxAOIYCUdql82jzLVqpvabPcNDtqFOQicw==",
+      "path": "usync.backoffice.assets/10.2.1",
+      "hashPath": "usync.backoffice.assets.10.2.1.nupkg.sha512"
+    },
+    "uSync.Community.Contrib/10.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HfU1lOILjw88tDqE/f0h/6Hlilbf5aPBAm3s0+441dKQD9ZAlhXG5wsaXTIl/FJhqCN69sC0ytOasSyjeZoyeQ==",
+      "path": "usync.community.contrib/10.2.1",
+      "hashPath": "usync.community.contrib.10.2.1.nupkg.sha512"
+    },
+    "uSync.Core/10.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-az9tSH4R8l1E2XZTYUhvLwIgQxBOXbXI1eFd2TMUqmDhCreP90QFEDsbL45Wb0VJcjJ2EqBhtgQunzCeHgagcQ==",
+      "path": "usync.core/10.2.1",
+      "hashPath": "usync.core.10.2.1.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Antiforgery/6.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
@@ -6679,7 +6959,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.Authorization/6.0.0.0": {
+    "Microsoft.AspNetCore.Authorization.Reference/6.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -6694,12 +6974,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.Components/6.0.0.0": {
+    "Microsoft.AspNetCore.Components.Reference/6.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.Components.Forms/6.0.0.0": {
+    "Microsoft.AspNetCore.Components.Forms.Reference/6.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -6709,7 +6989,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.Components.Web/6.0.0.0": {
+    "Microsoft.AspNetCore.Components.Web.Reference/6.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -6864,7 +7144,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.Metadata/6.0.0.0": {
+    "Microsoft.AspNetCore.Metadata.Reference/6.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -7274,7 +7554,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.JSInterop/6.0.0.0": {
+    "Microsoft.JSInterop.Reference/6.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

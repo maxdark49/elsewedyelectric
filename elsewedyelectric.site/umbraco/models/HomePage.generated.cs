@@ -20,7 +20,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 {
 	/// <summary>Home Page</summary>
 	[PublishedModel("homePage")]
-	public partial class HomePage : PublishedContentModel, IHeaderProperties
+	public partial class HomePage : PublishedContentModel, IFooterProperties, IHeaderProperties, ISiteNavigationPage
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -50,20 +50,12 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		// properties
 
 		///<summary>
-		/// Body Text
+		/// Footer Social Links: enter the  social links to display in the footer
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("bodyText")]
-		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString BodyText => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetBodyText(this, _publishedValueFallback);
-
-		///<summary>
-		/// Colours
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("colours")]
-		public virtual string Colours => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetColours(this, _publishedValueFallback);
+		[ImplementPropertyType("footerSocialLinks")]
+		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Core.Models.PublishedContent.SocialLink> FooterSocialLinks => global::Umbraco.Cms.Web.Common.PublishedModels.FooterProperties.GetFooterSocialLinks(this, _publishedValueFallback);
 
 		///<summary>
 		/// Header Image: Enter the image for the header
@@ -72,29 +64,6 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("headerImage")]
 		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops HeaderImage => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetHeaderImage(this, _publishedValueFallback);
-
-		///<summary>
-		/// Hide Image: Do You Want To hide this Image ?
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
-		[ImplementPropertyType("hideImage")]
-		public virtual bool HideImage => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetHideImage(this, _publishedValueFallback);
-
-		///<summary>
-		/// Image
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("image")]
-		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops Image => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetImage(this, _publishedValueFallback);
-
-		///<summary>
-		/// Names: Enter The name You want
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("names")]
-		public virtual global::System.Collections.Generic.IEnumerable<string> Names => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetNames(this, _publishedValueFallback);
 
 		///<summary>
 		/// Subtitle: Enter the subtitle for this page
@@ -111,5 +80,13 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("title")]
 		public virtual string Title => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetTitle(this, _publishedValueFallback);
+
+		///<summary>
+		/// Main Navigation: add links for the main page
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("mainNavigation")]
+		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Web.Common.PublishedModels.NavigationItem> MainNavigation => global::Umbraco.Cms.Web.Common.PublishedModels.SiteNavigationPage.GetMainNavigation(this, _publishedValueFallback);
 	}
 }
