@@ -1,0 +1,89 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.SubContent>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+ <section id="top-page-image">
+<div class="top-page-image-inner container-fluid">
+	<div class="img" style="background-image:url('@Model.MainBanner?.Url()?anchor=center&amp;mode=crop&amp;width=1640&amp;height=850&amp;rnd=132440410630000000');"></div>
+	
+	</div>
+
+</section>
+<section class="corporate-body">
+        <div class="content-box-top corporate-body-main">
+            <div class="corporate-body-inner">
+                <div class="container">
+
+                    <div class="row title-row-container wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                        @* <div class="title-grneral-container">
+                            <h4>Corporate Governance</h4>
+                            <div class="red-line-top"></div>
+                        </div>
+                    </div> *@
+
+                    <div class="doThings-message-main content-box-down wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInRight;">
+                        
+            <div class="row big-box-leftTxt-rightImg">
+                <div class="col-md-6 left-side">
+                    <div class="left-side-inner">
+                     
+                       @Html.GetBlockListHtml(Model.List1);											
+										 
+                    
+                    </div>
+                </div>
+                <div class="col-md-6 right-side">
+                        <img class="img-responsive" src="@Model.Imag1.Url()?width=600" alt="topic">
+                    
+                </div>
+            </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="projects-list">
+        <div class="container">
+            <div class="container-content-bg">
+                <div class=" row-content-bg">
+                    <div class="container-content-bg-inner">
+                        <h5>@Model.Label1</h5>
+                        <div></div>
+                            <div class="row listOfTwo-projects-in-row">
+															@foreach (var item in Model.Imagelist3)
+															{
+																<div class="col-md-6 oneOfTwo-projects-in-row">
+                                    <div class="oneOfTwo-projects-action">
+                                        <div class="oneOfTwo-projects-main">
+                                            <div class="row oneOfTwo-projects-inner">
+                                                <img class="" src="@item.Image.Url()?width=552&amp;height=315&amp;format=jpg&amp;mode=crop" alt="">
+                                                    <div class="oneOfTwo-projects-content">
+                                                        <div class="oneOfTwo-projects-content-inner">
+                                                            <h2>@item.Title&nbsp;</h2>
+                                                            <div><p><span>@item.Textarea</span></p></div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+															}
+                                
+                            
+                          
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

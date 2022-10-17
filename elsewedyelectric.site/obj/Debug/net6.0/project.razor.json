@@ -16655,8 +16655,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Mohamed\\source\\repos\\elsewedyelectric\\elsewedyelectric.site\\Views\\SubContent.cshtml",
+      "TargetPath": "Views\\SubContent.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Mohamed\\source\\repos\\elsewedyelectric\\elsewedyelectric.site\\Views\\Partials\\Footer.cshtml",
       "TargetPath": "Views\\Partials\\Footer.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Mohamed\\source\\repos\\elsewedyelectric\\elsewedyelectric.site\\Views\\TelecomInfrastructure.cshtml",
+      "TargetPath": "Views\\TelecomInfrastructure.cshtml",
       "FileKind": "mvc"
     },
     {
