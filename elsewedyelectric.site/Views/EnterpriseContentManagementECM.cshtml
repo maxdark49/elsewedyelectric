@@ -1,0 +1,44 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.EnterpriseContentManagementEcm>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+<section id="top-page-image">
+	<br />
+<div class="row" >
+	<div class="col-lg-12 col-md-12" style="text-align:center">
+		<h2 style="text-align:center">@Model.TblHeader</h2>
+	</div>
+</div>
+<br />
+<div class="row" >
+	<div class="col-lg-12 col-md-12" style="text-align:right">
+		<strong>@Model.Description</strong>
+	</div>
+</div>
+<div class="row" >
+	<div class="col-lg-6 col-md-6" style="text-align:center">
+		<strong>@Model.Rich1</strong>
+	</div>
+	<div class="col-lg-6 col-md-6" style="text-align:center">
+		<img width="400" height="200" src="@Model.Images.ToList()[0].Url()"/>	
+	</div>
+</div>
+<br />
+<div class="row" >
+	<div class="col-lg-12 col-md-12" style="text-align:center">
+		<strong>@Model.Strings.ToList()[0]</strong>
+	</div>
+</div>
+<br />
+<div class="row" >
+	<div class="col-lg-6 col-md-6" style="text-align:center">
+		<strong>@Model.Strings.ToList()[1]</strong>
+		<strong>@Model.Rich2</strong>
+	</div>
+	<div class="col-lg-6 col-md-6" style="text-align:center">
+		<img width="400" height="200" src="@Model.Images.ToList()[1].Url()"/>	
+	</div>
+</div>
+</section>
