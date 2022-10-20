@@ -1883,3 +1883,12 @@ C:\Users\Mohamed\source\repos\elsewedyelectric\elsewedyelectric.site\bin\Debug\n
 C:\Users\Mohamed\source\repos\elsewedyelectric\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\Content\backbone-and-last-mile-fiber-networks-fttx.config
 C:\Users\Mohamed\source\repos\elsewedyelectric\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\Domains\telecom-infrastructure-en_en-us.config
 C:\Users\Mohamed\source\repos\elsewedyelectric\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\Templates\subcontent.config
+C:\Users\Mohamed\source\repos\elsewedyelectric\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\Media\36.config
+C:\Users\Mohamed\source\repos\elsewedyelectric\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\ContentTypes\curosalrow.config
+C:\Users\Mohamed\source\repos\elsewedyelectric\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\ContentTypes\multicurosal.config
+C:\Users\Mohamed\source\repos\elsewedyelectric\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\DataTypes\BlocklistCuroselContent.config
+C:\Users\Mohamed\source\repos\elsewedyelectric\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\ContentTypes\curosalitem.config
+C:\Users\Mohamed\source\repos\elsewedyelectric\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\ContentTypes\curosalitemsettings.config
+C:\Users\Mohamed\source\repos\elsewedyelectric\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\ContentTypes\curosalrowsettings.config
+C:\Users\Mohamed\source\repos\elsewedyelectric\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\DataTypes\blocklistCurosalRows.config
+C:\Users\Mohamed\source\repos\elsewedyelectric\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\DataTypes\BlocklistCuroselItems.config

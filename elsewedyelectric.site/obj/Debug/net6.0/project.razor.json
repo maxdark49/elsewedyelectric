@@ -16545,6 +16545,11 @@
   "RootNamespace": "elsewedyelectric.site",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Mohamed\\source\\repos\\elsewedyelectric\\elsewedyelectric.site\\Views\\Partials\\blocklist\\Components\\curosalRow.cshtml",
+      "TargetPath": "Views\\Partials\\blocklist\\Components\\curosalRow.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Mohamed\\source\\repos\\elsewedyelectric\\elsewedyelectric.site\\Views\\Partials\\grid\\editors\\base.cshtml",
       "TargetPath": "Views\\Partials\\grid\\editors\\base.cshtml",
       "FileKind": "mvc"

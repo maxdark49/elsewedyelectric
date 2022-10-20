@@ -1,0 +1,82 @@
+@inherits UmbracoViewPage<BlockListItem>
+
+@{
+    var row = (CurosalRow)Model.Content;
+      var settings =(CurosalRowSettings)Model.Settings;
+    if(settings?.Hide ?? false) {return;}
+    if (row.CurosalItems==null ||!row.CurosalItems.Any() )return;
+    var curoselID ="Curosal" +row.Key;
+}
+      <div class="header-slider-inner">
+            <div class="container-fluid">
+                
+
+                <div id="slider-items"  class="owl-carousel owl-theme owl-loaded owl-drag">
+              <div class="owl-stage-outer"><div class="owl-stage" style="transition: all 0s ease 0s;  width: 8870px; transform: translate3d(-2217px, 0px, 0px);">
+                           
+         @{
+          var itemindex=0;
+          
+    foreach (var item in row.CurosalItems)
+        {
+            var isfirstitem = itemindex ==0;
+              var rowitem = (Curosalitem)item.Content;
+          var rowsettings =(CurosalitemSettings)item.Settings;
+          if(rowsettings.Hide)continue;
+                      <div class="owl-item @(isfirstitem ? "active center" : "cloned")" style="width: 739.091px;"><div class="slider-item">
+                                <div class="item-image img-responsive">
+                                    <img style="background-image:url('@rowitem.Image.Url()')" alt="">
+                                </div>
+                                <div class="slider-effect"></div>
+                                <div class="slider-content-out">
+                                    <div class="slider-content">
+                                        <h1><br><span class="sliderTitleSpan">@rowitem.Title</span></h1>
+                                        
+                                        <p class="slider-subTitle">
+                                           @rowitem.Description
+                                        </p>
+                                        <div id="slider-btn">
+                                            <a class="btn btn-Cw-Bt-to-Cb-Bw" href="/en/about-us/" title="Find Out More" role="button">
+                                                Find Out More
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+        
+        
+                            </div></div>
+         
+          itemindex++;
+     }
+        
+        }
+                            </div></div>
+
+
+                              
+                                
+                                
+                                
+
+                    
+             @* <div class="owl-nav disabled"><div class="owl-prev">prev</div><div class="owl-next">next</div></div> *@
+       
+             <div class="owl-dots">
+                @{
+                    var dotactiveindex = 0;
+                       foreach (var item in row.CurosalItems)
+        {
+            var ifdotactive = dotactiveindex == 0;
+             var rowsettings =(CurosalitemSettings)item.Settings;
+              if(rowsettings.Hide)continue;
+                @* <div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div> *@
+                <div class="owl-dot @(ifdotactive ? "active" : null)"><span></span></div>
+                dotactiveindex++;
+        } 
+                }
+             </div>
+             </div>
+        
+
+            </div>
+        </div>   
