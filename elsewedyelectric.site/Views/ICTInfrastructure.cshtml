@@ -1,0 +1,96 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.ICtinfrastructure>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+ <section id="top-page-image">
+<div class="top-page-image-inner container-fluid">
+	<div class="img" style="background-image:url('@Model.MainBanner?.Url()?anchor=center&amp;mode=crop&amp;width=1640&amp;height=850&amp;rnd=132440410630000000');"></div>
+	
+	</div>
+
+</section>
+<div class="container">
+		<div class="title-grneral-flued">
+                            <h4>@Model.Title</h4>
+                            <div class="red-line-top"></div>
+                        </div>
+	<div class="start-description-main">
+		<div class="start-description-main">
+	<p>@Model.Paragraph1</p>
+	</div>
+	</div> 
+
+			<div class="title-grneral-flued">
+                            <h4>@Model.Label1</h4>
+                            <div class="red-line-top"></div>
+                        </div>
+</div>
+			<section class="sectors-landingpage-body">
+				
+     <div class="container content-box-down-xs">
+
+            <div class="row list-of-but-3-in-row wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInRight;">                    
+@foreach (var item in Model.Imagelist1)
+{
+	 
+
+	
+	  <div class="col-md-4 col-sm-2 one-of-3-but-in-row">
+                            <a href="@item?.Link?.Url" class="one-but-action">
+                                <div class="one-but-item">
+                                    <div class="one-but-item-effect-semi"></div>
+                                    <div class="one-but-item-effect2"></div>
+                                    <img src="@item.Image.Url()?anchor=center&amp;mode=crop&amp;width=374&amp;height=420&amp;rnd=132440410630000000" class="img-responsive" alt="">
+                                    <div class="one-but-item-content">
+                                        <h3 class="one-but-item-title">@item.Title</h3>
+                                        <div class="find-more">
+                                            <p>@Model.Label3</p>
+                                            <i class="icon-line-arrow-right one-but-arrow"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+}
+                     
+                    </div>
+
+            </div>
+    </section>											
+
+		<section id="PartnersSuccess">
+        <div class="ProductCerification-inner container content-box-down-xs">
+            <div class="row title-row-container-inbody content-box-down-xs">
+                <div class="title-row-container-inbody-inner">
+                   	<div class="title-grneral-flued">
+                            <h4>@Model.Label2</h4>
+                            <div class="red-line-top"></div>
+                        </div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="row list-threePicsInOneRow-items-out">
+							@foreach (var item in @Model.Imagelist2)
+							{
+								  <div class="col-sm-4 list-threePicsInOneRow-items">
+                            <div class="list-threePicsInOneRow-items-inner">
+                                <div href="" class="one-pic-action">
+                                    <div class="one-pic-item">
+                                        <div class="one-pic-item-inner">
+                                            <img src="@item.Image.Url()?width=300&amp;height=200&amp;format=png&amp;mode=crop" class="img-responsive" alt="">
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+							}
+                      
+                     
+                       
+                        
+            </div>
+        </div>
+    </section>

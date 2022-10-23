@@ -22,10 +22,20 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 	/// <summary>Site Navigation Page</summary>
 	public partial interface ISiteNavigationPage : IPublishedElement
 	{
+		/// <summary>first label</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		string FirstLabel { get; }
+
 		/// <summary>Main Navigation</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Web.Common.PublishedModels.NavigationItem> MainNavigation { get; }
+
+		/// <summary>secondlabel</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		string Secondlabel { get; }
 	}
 
 	/// <summary>Site Navigation Page</summary>
@@ -60,6 +70,19 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		// properties
 
 		///<summary>
+		/// first label
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("firstLabel")]
+		public virtual string FirstLabel => GetFirstLabel(this, _publishedValueFallback);
+
+		/// <summary>Static getter for first label</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static string GetFirstLabel(ISiteNavigationPage that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "firstLabel");
+
+		///<summary>
 		/// Main Navigation: add links for the main page
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
@@ -71,5 +94,18 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		public static global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Web.Common.PublishedModels.NavigationItem> GetMainNavigation(ISiteNavigationPage that, IPublishedValueFallback publishedValueFallback) => that.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Web.Common.PublishedModels.NavigationItem>>(publishedValueFallback, "mainNavigation");
+
+		///<summary>
+		/// secondlabel
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("secondlabel")]
+		public virtual string Secondlabel => GetSecondlabel(this, _publishedValueFallback);
+
+		/// <summary>Static getter for secondlabel</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
+		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		public static string GetSecondlabel(ISiteNavigationPage that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "secondlabel");
 	}
 }

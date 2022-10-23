@@ -24,12 +24,13 @@
                     <div class="row">
                         <div class="col-sm-5 firest-message-left-side wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInLeft;">
                             <div class="left-side-inner">
+                                
                                 <h2><span class="span1">&nbsp;&nbsp; @Model.Companyname1</span><br><span class="span2">@Model.Companyname2</span></h2>
                             </div>
                         </div>
-                        <div class="col-sm-7 firest-message-right-side wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInRight;">
+                        <div class="col-sm-7 firest-message-right-side wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInRight; ">
                             
-                        						            @Html.GetBlockListHtml(Model.MainContent)
+                    				            @Html.GetBlockListHtml(Model.MainContent)
 
                         </div>
                     </div>
@@ -39,10 +40,12 @@
         </div>         
 					</section>
 	<section id="keyfigures">
+        <div class="container">
 						<div class="title-grneral-flued">
                             <h4>@Model.KeyFiguresLabel</h4>
                             <div class="red-line-top"></div>
                         </div>
+        </div>
         <div class="content-box-down numbers-home-main">
             <div class="">
                 <div class="container">
@@ -61,13 +64,15 @@
 
 
 </section>
+<div class="container">
 <div class="title-grneral-flued">
 		<h4>@Model.Partners</h4>
 		<div class="red-line-top"></div>
 		</div>
+</div>
 <section class="logo-list">
-	
 	<div class="container">
+	
 		 @* <div class="row">
 
 			<h4 style="color:red ;">@Model.Cloudname</h4>
@@ -78,23 +83,29 @@
 		</div> *@
 			@foreach (var items  in datacentrelist)
 					{
-        <div class="row">
-				
+        <div class="row" style="padding-left:100px ;">
+            @{int itemscount=items.Multiimagpicker.Count();}
+
+
+				   
+
 				<h4 style="color:red ;">@items.Title</h4>
 						@foreach (var item in items.Multiimagpicker)
 						{
-							<span> &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>	
-													<img style="float:centre;" href="" src="@item.Url()"alt="@items.Title">
+									<img  style="width:10%;height:12%;"  href="#" src="@item.Url()"alt="@items.Title">
 						}
+                       
 					
         </div>
 					}
     </div>
 </section>
+<div class="container">
 <div class="title-grneral-flued">
 		<h4>@Model.Companies</h4>
 		<div class="red-line-top"></div>
 		</div>
+</div>
 		<section class="sectors-landingpage-body">
         <div class="content-box-top-down sectors-landingpage-body-main">
             <div class="sectors-landingpage-body-inner">
@@ -107,8 +118,8 @@
 @foreach (var item in compaines)
 {
 	 <div class="col-sm-3 oneOfThreeButs-upImg-ColorBG-DownContent">
-                                <a href="#" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
-                                    </a><div class="But-upImg-ColorBG-DownContent-inner"><a href="#" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                <a href="@item?.Link?.Url" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                    </a><div class="But-upImg-ColorBG-DownContent-inner"><a href="@item?.Link?.Url" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
                                         <div class="But-upImg-img">
                                             <div class="box-item-effect-semi" id="box-item-effect"></div>
                                             <div class="box-item-effect2-alpha" id="box-item-effect2-alpha"></div>
@@ -116,12 +127,12 @@
                                         </div>
     
     
-                                        </a><div class="But-DownContent-content-ColorBG"><a href="#" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                        </a><div class="But-DownContent-content-ColorBG"><a href="@item?.Link?.Url" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
 																					<h5>@item.Title</h5>
                                             
                                             <p></p><p>@item.Textarea</p>
-                                            </a><div class="big-topic-btn"><a href="#" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
-                                                </a><a href="#" class="btn btn-Cw-Bu-to-Cb-Bw" title="Find Out More" role="button">Find Out More</a>
+                                            </a><div class="big-topic-btn"><a href="@item?.Link?.Url" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                                </a><a href="@item?.Link?.Url" class="btn btn-Cw-Bu-to-Cb-Bw" title="Find Out More" role="button">Find Out More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -139,6 +150,18 @@
         </div>
     </section>
 		<section>
+  
+
+<div class="container"> 
+  <div class="title-grneral-flued">
+		<h4>@Model.Cloudname</h4>
+		<div class="red-line-top"></div>
+		</div>
+</div>
+            </div>
+
+  <!-- Wrapper for slides -->
+ 
 		@Html.GetBlockListHtml(Model.Curosellist)
 					
  </section>

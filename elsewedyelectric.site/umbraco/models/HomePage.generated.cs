@@ -114,6 +114,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Web.Common.PublishedModels.Multiimage> DataCintres => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Web.Common.PublishedModels.Multiimage>>(_publishedValueFallback, "dataCintres");
 
 		///<summary>
+		/// homepagelink
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("homepagelink")]
+		public virtual global::Umbraco.Cms.Core.Models.Link Homepagelink => this.Value<global::Umbraco.Cms.Core.Models.Link>(_publishedValueFallback, "homepagelink");
+
+		///<summary>
 		/// KeyFigures
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
@@ -194,11 +202,27 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string Title => global::Umbraco.Cms.Web.Common.PublishedModels.HeaderProperties.GetTitle(this, _publishedValueFallback);
 
 		///<summary>
+		/// first label
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("firstLabel")]
+		public virtual string FirstLabel => global::Umbraco.Cms.Web.Common.PublishedModels.SiteNavigationPage.GetFirstLabel(this, _publishedValueFallback);
+
+		///<summary>
 		/// Main Navigation: add links for the main page
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("mainNavigation")]
 		public virtual global::System.Collections.Generic.IEnumerable<global::Umbraco.Cms.Web.Common.PublishedModels.NavigationItem> MainNavigation => global::Umbraco.Cms.Web.Common.PublishedModels.SiteNavigationPage.GetMainNavigation(this, _publishedValueFallback);
+
+		///<summary>
+		/// secondlabel
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("secondlabel")]
+		public virtual string Secondlabel => global::Umbraco.Cms.Web.Common.PublishedModels.SiteNavigationPage.GetSecondlabel(this, _publishedValueFallback);
 	}
 }

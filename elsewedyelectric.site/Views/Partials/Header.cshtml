@@ -1,4 +1,10 @@
 @inherits UmbracoViewPage<IHeaderProperties>
+
+  @{
+          var homepage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
+          //var children = homepage?.Children?.Where(x=>x.IsVisible()) ?? Enumerable.Empty<IPublishedContent>();
+            var children = homepage?.MainNavigation;
+  }  
    <!-- Page Header-->
 <header>
         <nav id="mainMenu-nav" class="navbar navbar-fixed-top">
@@ -10,8 +16,8 @@
                         <div class="row header-options">
 
                             <div class="logo-home col-md-2 col-sm-3">
-                                <a class="logo-home-inner" href="">
-                                    <img src="~/img/logo.png" alt="logo">
+                                <a class="logo-home-inner" href="@homepage.Url()">
+               <img src="@homepage.HeaderImage.Url()" style="height:80px; width:80px ;" alt="logo">
                                 </a>
                             </div>
 
@@ -22,7 +28,7 @@
                                     </a>
 
                                     <input class="search-box-input" type="text" id="form-name" name="name"
-                                        placeholder="Search in Elsewedy Electric">
+                                        placeholder="Search in Elsewedy Technology">
 
                                 </div>
 

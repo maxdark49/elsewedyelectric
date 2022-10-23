@@ -11,6 +11,18 @@
 	</div>
 
 </section>
+<div class="container">
+		<div class="title-grneral-flued">
+                            <h4>@Model.Title</h4>
+                         <div class="red-line-top"></div>
+                        </div>
+                        
+	<div class="start-description-main">
+		<div class="start-description-main">
+	<p>@Model.Paragraph1</p>
+	</div>
+	</div> 
+</div>
 <section class="corporate-body">
         <div class="content-box-top corporate-body-main">
             <div class="corporate-body-inner">
@@ -35,7 +47,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 right-side">
-                        <img class="img-responsive" src="@Model.Imag1.Url()?width=600" alt="topic">
+                        <img class="img-responsive" src="@Model.Imag1?.Url()?width=600" alt="topic">
                     
                 </div>
             </div>
@@ -56,10 +68,15 @@
             <div class="container-content-bg">
                 <div class=" row-content-bg">
                     <div class="container-content-bg-inner">
+                        <div class="title-grneral-flued">
                         <h5>@Model.Label1</h5>
-                        <div></div>
+@if(Model.Label1.Any())
+{
+                           <div class="red-line-top"></div>
+}
+                        </div>
                             <div class="row listOfTwo-projects-in-row">
-															@foreach (var item in Model.Imagelist3)
+															@foreach (var item in Model?.Imagelist3)
 															{
 																<div class="col-md-6 oneOfTwo-projects-in-row">
                                     <div class="oneOfTwo-projects-action">
