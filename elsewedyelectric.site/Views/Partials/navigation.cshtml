@@ -11,14 +11,141 @@
 
                             <div class="navbar-menu">
                                 <div class="navbar-menu-inner">
-                                    <a class="homeBut-menu" href="@homepage.Homepagelink.Url">@homepage?.FirstLabel</a>
+          <a class="homeBut-menu" href="@homepage.Homepagelink.Url">@homepage?.FirstLabel</a>
                                    
                                             <div class="menu-dropdown">
                                         <button class="dropbtn-menu">@homepage?.Secondlabel</button>
-                                        <div class="container megaMenu-drop dropdown-content">
-                                            <div class="row">
+                                     <div class="container megaMenu-drop dropdown-content">
+
+    
+    <div class=row>
+    
+        <div class="column">
+         <a class="" href="@children.ElementAt(0).Link.Url">
+         <h3 class="inner-link">@children.ElementAt(0).Title</h3>
+        </a>
+   @foreach (var element in children.ElementAt(0).ChildrenLinks)
+           {
+               <a class="inner-inner-link" href="@element.Url">@element.Name</a>
+                                                 
+           }
+        </div>
+
+          <div class="column">
+         <a class="" href="@children.ElementAt(1).Link.Url">
+         <h3 class="inner-link">@children.ElementAt(1).Title</h3>
+        </a>
+   @foreach (var element in children.ElementAt(1).ChildrenLinks)
+           {
+               <a class="inner-inner-link" href="@element.Url">@element.Name</a>
+                                                 
+           }
+        </div>
+          <div class="column">
+         <a class="" href="@children.ElementAt(2).Link.Url">
+         <h3 class="inner-link">@children.ElementAt(2).Title</h3>
+        </a>
+   @foreach (var element in children.ElementAt(2).ChildrenLinks)
+           {
+               <a class="inner-inner-link" href="@element.Url">@element.Name</a>
+                                                 
+           }
+        </div>
+
+          <div class="column">
+         <a class="" href="@children.ElementAt(3).Link.Url">
+         <h3 class="inner-link">@children.ElementAt(3).Title</h3>
+        </a>
+   @foreach (var element in children.ElementAt(3).ChildrenLinks)
+           {
+               <a class="inner-inner-link" href="@element.Url">@element.Name</a>
+                                                 
+           }
+        </div>
+    
+    </div>
+
+     <div class=row>
+    
+        <div class="column">
+         <a class="" href="@children.ElementAt(4).Link.Url">
+         <h3 class="inner-link">@children.ElementAt(4).Title</h3>
+        </a>
+   @foreach (var element in children.ElementAt(4).ChildrenLinks)
+           {
+               <a class="inner-inner-link" href="@element.Url">@element.Name</a>
+                                                 
+           }
+        </div>
+
+          <div class="column">
+         <a class="" href="@children.ElementAt(5).Link.Url">
+         <h3 class="inner-link">@children.ElementAt(5).Title</h3>
+        </a>
+   @foreach (var element in children.ElementAt(5).ChildrenLinks)
+           {
+               <a class="inner-inner-link" href="@element.Url">@element.Name</a>
+                                                 
+           }
+        </div>
+          <div class="column">
+         <a class="" href="@children.ElementAt(6).Link.Url">
+         <h3 class="inner-link">@children.ElementAt(6).Title</h3>
+        </a>
+   @foreach (var element in children.ElementAt(6).ChildrenLinks)
+           {
+               <a class="inner-inner-link" href="@element.Url">@element.Name</a>
+                                                 
+           }
+        </div>
+
+          <div class="column">
+         <a class="" href="@children.ElementAt(7).Link.Url">
+         <h3 class="inner-link">@children.ElementAt(7).Title</h3>
+        </a>
+   @foreach (var element in children.ElementAt(7).ChildrenLinks)
+           {
+               <a class="inner-inner-link" href="@element.Url">@element.Name</a>
+                                                 
+           }
+        </div>
+    
+    </div>
+
+ <div class=row>
+    
+        <div class="column">
+         <a class="" href="@children.ElementAt(8).Link.Url">
+         <h3 class="inner-link">@children.ElementAt(8).Title</h3>
+        </a>
+   @foreach (var element in children.ElementAt(8).ChildrenLinks)
+           {
+               <a class="inner-inner-link" href="@element.Url">@element.Name</a>
+                                                 
+           }
+        </div>
+
+          <div class="column">
+         <a class="" href="@children.ElementAt(9).Link.Url">
+         <h3 class="inner-link">@children.ElementAt(9).Title</h3>
+        </a>
+   @foreach (var element in children.ElementAt(9).ChildrenLinks)
+           {
+               <a class="inner-inner-link" href="@element.Url">@element.Name</a>
+                                                 
+           }
+  
+
+    
+    </div>
+
+
+@* <div class="row">
                                                 @foreach (var item in children)
                                                 {
+                                                   int counter=0;
+
+                                                     
                                                       <div class="column">
                                                     <a class="" href="@item.Link.Url">
                                                         
@@ -40,7 +167,7 @@
                                             
 
                                             </div>
-                                        </div>
+                                        </div> *@
                                     </div>
 
                               
