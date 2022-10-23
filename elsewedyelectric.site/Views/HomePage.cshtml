@@ -1,0 +1,228 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.HomePage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	          var homepage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
+							var datacentrelist= homepage?.DataCintres;
+							var cloudlist =homepage?.Clouds;
+							var compaines= homepage?.CompaniesList;
+							
+
+	Layout = "Master.cshtml";
+}
+ <section id="top-page-image">
+<div class="top-page-image-inner container-fluid">
+	<div class="img" style="background-image:url('@Model.HeaderImage?.Url()?anchor=center&amp;mode=crop&amp;width=1640&amp;height=850&amp;rnd=132440410630000000');"></div>
+	
+	</div>
+</section>
+       
+					<section id="firest-message">
+						     <div class="content-box-top-down-padding firest-message-main">
+            <div class="firest-message-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-5 firest-message-left-side wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                            <div class="left-side-inner">
+                                <h2><span class="span1">&nbsp;&nbsp; @Model.Companyname1</span><br><span class="span2">@Model.Companyname2</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-sm-7 firest-message-right-side wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInRight;">
+                            
+                        						            @Html.GetBlockListHtml(Model.MainContent)
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>         
+					</section>
+	<section id="keyfigures">
+						<div class="title-grneral-flued">
+                            <h4>@Model.KeyFiguresLabel</h4>
+                            <div class="red-line-top"></div>
+                        </div>
+        <div class="content-box-down numbers-home-main">
+            <div class="">
+                <div class="container">
+
+                    <div class="row list-twoInRow-topIcon-downDesc-numbers">
+
+   <div class="row list-twoInRow-topIcon-downDesc-numbers">
+
+  						            @Html.GetBlockListHtml(Model.KeyFigures);
+	 </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+</section>
+<div class="title-grneral-flued">
+		<h4>@Model.Partners</h4>
+		<div class="red-line-top"></div>
+		</div>
+<section class="logo-list">
+	
+	<div class="container">
+		 @* <div class="row">
+
+			<h4 style="color:red ;">@Model.Cloudname</h4>
+		@foreach (var item in cloudlist)
+		{
+			<a href="@item.Link.Url">	<img style="float:centre;" href="" src="@item.Image?.Url()"alt="@item.Title"> </a>
+		}
+		</div> *@
+			@foreach (var items  in datacentrelist)
+					{
+        <div class="row">
+				
+				<h4 style="color:red ;">@items.Title</h4>
+						@foreach (var item in items.Multiimagpicker)
+						{
+							<span> &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>	
+													<img style="float:centre;" href="" src="@item.Url()"alt="@items.Title">
+						}
+					
+        </div>
+					}
+    </div>
+</section>
+<div class="title-grneral-flued">
+		<h4>@Model.Companies</h4>
+		<div class="red-line-top"></div>
+		</div>
+		<section class="sectors-landingpage-body">
+        <div class="content-box-top-down sectors-landingpage-body-main">
+            <div class="sectors-landingpage-body-inner">
+                <div class="container">
+                    
+                 
+                    <div class="row listOfThreeButsInRow-upImg-DownContent-ColorBG wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInRight;">
+
+
+@foreach (var item in compaines)
+{
+	 <div class="col-sm-3 oneOfThreeButs-upImg-ColorBG-DownContent">
+                                <a href="#" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                    </a><div class="But-upImg-ColorBG-DownContent-inner"><a href="#" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                        <div class="But-upImg-img">
+                                            <div class="box-item-effect-semi" id="box-item-effect"></div>
+                                            <div class="box-item-effect2-alpha" id="box-item-effect2-alpha"></div>
+                                            <img class="img-responsive" src="@item.Image?.Url()?anchor=center&amp;mode=crop&amp;&amp;&amp;rnd=132440410620000000" alt="@item.Title">
+                                        </div>
+    
+    
+                                        </a><div class="But-DownContent-content-ColorBG"><a href="#" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+																					<h5>@item.Title</h5>
+                                            
+                                            <p></p><p>@item.Textarea</p>
+                                            </a><div class="big-topic-btn"><a href="#" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                                </a><a href="#" class="btn btn-Cw-Bu-to-Cb-Bw" title="Find Out More" role="button">Find Out More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+	   
+}
+
+
+                         
+    
+		   @* <div class="col-sm-3 oneOfThreeButs-upImg-ColorBG-DownContent">
+                                <a href="/en/business-lines/wire-cable-accessories/" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                    </a><div class="But-upImg-ColorBG-DownContent-inner"><a href="/en/business-lines/wire-cable-accessories/" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                        <div class="But-upImg-img">
+                                            <div class="box-item-effect-semi" id="box-item-effect"></div>
+                                            <div class="box-item-effect2-alpha" id="box-item-effect2-alpha"></div>
+                                            <img class="img-responsive" src="/media/1996/wires-cables.jpg?anchor=center&amp;mode=crop&amp;width=380&amp;height=355&amp;rnd=133069565270000000" alt="Wire, Cable &amp; Accessories">
+                                        </div>
+    
+                                        </a><div class="But-DownContent-content-ColorBG"><a href="/en/business-lines/wire-cable-accessories/" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                            <h5>Wire, Cable &amp; Accessories</h5>
+                                            <p></p><p>With over 40 years of experience in the manufacturing industry,...</p>
+                                            </a><div class="big-topic-btn"><a href="/en/business-lines/wire-cable-accessories/" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                                </a><a href="/en/business-lines/wire-cable-accessories/" class="btn btn-Cw-Bu-to-Cb-Bw" title="Find Out More" role="button">Find Out More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                            <div class="col-sm-3 oneOfThreeButs-upImg-ColorBG-DownContent">
+                                <a href="/en/business-lines/electrical-products/" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                    </a><div class="But-upImg-ColorBG-DownContent-inner"><a href="/en/business-lines/electrical-products/" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                        <div class="But-upImg-img">
+                                            <div class="box-item-effect-semi" id="box-item-effect"></div>
+                                            <div class="box-item-effect2-alpha" id="box-item-effect2-alpha"></div>
+                                            <img class="img-responsive" src="/media/3607/electrical-productn.jpg?anchor=center&amp;mode=crop&amp;width=380&amp;height=355&amp;rnd=132440410630000000" alt="Electrical Products">
+                                        </div>
+    
+    
+                                        </a><div class="But-DownContent-content-ColorBG"><a href="/en/business-lines/electrical-products/" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                            <h5>Electrical Products</h5>
+                                            <p></p><p>In an ever-changing world, with new developments arising each...</p>
+                                            </a><div class="big-topic-btn"><a href="/en/business-lines/electrical-products/" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                                </a><a href="/en/business-lines/electrical-products/" class="btn btn-Cw-Bu-to-Cb-Bw" title="Find Out More" role="button">Find Out More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                            <div class="col-sm-3 oneOfThreeButs-upImg-ColorBG-DownContent">
+                                <a href="/en/business-lines/engineering-construction/" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                    </a><div class="But-upImg-ColorBG-DownContent-inner"><a href="/en/business-lines/engineering-construction/" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                        <div class="But-upImg-img">
+                                            <div class="box-item-effect-semi" id="box-item-effect"></div>
+                                            <div class="box-item-effect2-alpha" id="box-item-effect2-alpha"></div>
+                                            <img class="img-responsive" src="/media/1217/construction.jpg?anchor=center&amp;mode=crop&amp;width=380&amp;height=355&amp;rnd=133069565250000000" alt="Engineering &amp; Construction">
+                                        </div>
+    
+    
+                                        </a><div class="But-DownContent-content-ColorBG"><a href="/en/business-lines/engineering-construction/" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                            <h5>Engineering &amp; Construction</h5>
+                                            <p></p><p>As an expert in turnkey infrastructure, power generation, transmission,...</p>
+                                            </a><div class="big-topic-btn"><a href="/en/business-lines/engineering-construction/" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                                </a><a href="/en/business-lines/engineering-construction/" class="btn btn-Cw-Bu-to-Cb-Bw" title="Find Out More" role="button">Find Out More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                            <div class="col-sm-3 oneOfThreeButs-upImg-ColorBG-DownContent">
+                                <a href="/en/business-lines/digital-solutions/" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                    </a><div class="But-upImg-ColorBG-DownContent-inner"><a href="/en/business-lines/digital-solutions/" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                        <div class="But-upImg-img">
+                                            <div class="box-item-effect-semi" id="box-item-effect"></div>
+                                            <div class="box-item-effect2-alpha" id="box-item-effect2-alpha"></div>
+                                            <img class="img-responsive" src="/media/2170/technology.jpg?anchor=center&amp;mode=crop&amp;width=380&amp;height=355&amp;rnd=132440410620000000" alt="Digital Solutions">
+                                        </div>
+    
+    
+                                        </a><div class="But-DownContent-content-ColorBG"><a href="/en/business-lines/digital-solutions/" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                            <h5>Digital Solutions</h5>
+                                            <p></p><p>Elsewedy Digital is a global system integrator focusing on...</p>
+                                            </a><div class="big-topic-btn"><a href="/en/business-lines/digital-solutions/" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
+                                                </a><a href="/en/business-lines/digital-solutions/" class="btn btn-Cw-Bu-to-Cb-Bw" title="Find Out More" role="button">Find Out More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            </div> *@
+                            
+    
+                           
+                        </div>
+    
+    
+
+                </div>
+            </div>
+        </div>
+    </section>
+					
+ 
+       

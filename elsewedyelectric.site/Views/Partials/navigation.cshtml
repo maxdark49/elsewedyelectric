@@ -1,0 +1,304 @@
+  @inherits UmbracoViewPage
+  @{
+          var homepage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
+          //var children = homepage?.Children?.Where(x=>x.IsVisible()) ?? Enumerable.Empty<IPublishedContent>();
+            var children = homepage?.MainNavigation;
+  }
+  <!-- Navigation-->
+  
+                    <div class="container site-menu">
+                        <div class="collapse navbar-collapse">
+
+                            <div class="navbar-menu">
+                                <div class="navbar-menu-inner">
+                                    <a class="homeBut-menu" href="">Home</a>
+
+
+                                    <div class="menu-dropdown">
+                                        <button class="dropbtn-menu">About Us</button>
+                                        <div class="container megaMenu-drop dropdown-content">
+                                            <div class="row">
+
+                                                <div class="column">
+                                                    <a class="inner-inner-link" href="#">At A Glance</a>
+                                                    <a class="inner-inner-link" href="#">Vision and Mission</a>
+                                                    <a class="inner-inner-link" href="#">Letter from the CEO</a>
+                                                    <a class="inner-inner-link" href="#">History</a>
+                                                    <a class="inner-inner-link" href="#">Corporate Governance</a>
+                                                    <a class="inner-inner-link" href="#">Group Structure</a>
+                                                    <a class="inner-inner-link" href="#">Offices/Locations</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="menu-dropdown">
+                                        <button class="dropbtn-menu">Sustainability</button>
+                                        <div class=" container megaMenu-drop dropdown-content">
+                                            <div class="row">
+
+                                                <div class="column">
+                                                    <a class="inner-inner-link" href="#">Communities</a>
+                                                    <a class="inner-inner-link" href="#">Enviroment</a>
+                                                    <a class="inner-inner-link" href="#">Education</a>
+                                                    <a class="inner-inner-link" href="#">Certification</a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="menu-dropdown">
+                                        <button class="dropbtn-menu">Sectors</button>
+                                        <div class="container megaMenu-drop dropdown-content">
+                                            <div class="row">
+                                                <div class="column">
+                                                    <a class="" href="#">
+                                                        <h3 class="inner-link">Industry</h3>
+                                                    </a>
+                                                    <a class="inner-inner-link" href="#">Wires and Cables</a>
+                                                    <a class="inner-inner-link" href="#">Electrical Products</a>
+                                                    <a class="inner-inner-link" href="#">Transformers</a>
+                                                </div>
+                                                <div class="column">
+                                                    <a class="" href="#">
+                                                        <h3 class="inner-link">EPC</h3>
+                                                    </a>
+                                                    <a class="inner-inner-link" href="#">Power Generation</a>
+                                                    <a class="inner-inner-link" href="#">Transmission & Distribution</a>
+                                                    <a class="inner-inner-link" href="#">Renewable Energy</a>
+                                                    <a class="inner-inner-link" href="#">Construction &
+                                                        Infrastructure</a>
+                                                    <a class="inner-inner-link" href="#">Oil & Gas</a>
+                                                </div>
+                                                <div class="column">
+                                                    <a class="" href="#">
+
+                                                        <h3 class="inner-link">Technology</h3>
+                                                    </a>
+                                                    <a class="inner-inner-link" href="#">Smart Energy Management</a>
+                                                    <a class="inner-inner-link" href="#">Data Centers</a>
+                                                    <a class="inner-inner-link" href="#">Smart City & AI</a>
+                                                    <a class="inner-inner-link" href="#">The Cloud</a>
+                                                    <a class="inner-inner-link" href="#">Big Data Analytics</a>
+                                                    <a class="inner-inner-link" href="#">Blockchain</a>
+                                                </div>
+
+                                                <div class="column">
+                                                    <a class="" href="#">
+                                                        <h3 class="inner-link">Investment</h3>
+                                                    </a>
+                                                    <a class="inner-inner-link" href="#">Independent Power Producers</a>
+                                                    <a class="inner-inner-link" href="#">Utilities Development</a>
+
+                                                </div>
+                                                <div class="column">
+                                                    <a class="" href="#">
+                                                        <h3 class="inner-link">Development</h3>
+                                                    </a>
+                                                    <a class="inner-inner-link" href="#">Industrial</a>
+                                                    <a class="inner-inner-link" href="#">Logistical</a>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="menu-dropdown">
+                                        <button class="dropbtn-menu">Media</button>
+                                        <div class=" container megaMenu-drop dropdown-content">
+                                            <div class="row">
+
+                                                <div class="column">
+                                                    <a class="inner-inner-link" href="#">News Room</a>
+                                                    <a class="inner-inner-link" href="#">Events</a>
+                                                    <a class="inner-inner-link" href="#">Publications</a>
+
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="menu-dropdown">
+                                        <button class="dropbtn-menu">Support</button>
+                                        <div class=" container megaMenu-drop dropdown-content">
+                                            <div class="row">
+
+                                                <div class="column">
+                                                    <a class="inner-inner-link" href="#">Contact Us</a>
+
+
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                             <nav id="menu">
+                        <label for="tm" id="toggle-menu">MENU<span class="drop-icon">&#9776;</span></label>
+                        <input type="checkbox" id="tm">
+                        <ul class="main-menu clearfix">
+
+
+                            <li><a href="#">Home</a></li>
+
+
+                            <li><a href="#">About Us
+                                    <span class="drop-icon">▾</span>
+                                    <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label>
+                                </a>
+                                <input type="checkbox" id="sm1">
+                                <ul class="sub-menu">
+                                    <li><a href="#">At A Glance</a></li>
+                                    <li><a href="#">Vision and Mission</a></li>
+                                    <li><a href="#">Letter from the CEO</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Corporate Governance</a></li>
+                                    <li><a href="#">Group Structure</a></li>
+                                    <li><a href="#">Offices/Locations</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li><a href="#">Sustainability
+                                    <span class="drop-icon">▾</span>
+                                    <label title="Toggle Drop-down" class="drop-icon" for="sm3">▾</label>
+                                </a>
+                                <input type="checkbox" id="sm3">
+                                <ul class="sub-menu">
+                                    <li><a href="#">Communities</a></li>
+                                    <li><a href="#">Enviroment</a></li>
+                                    <li><a href="#">Education</a></li>
+                                    <li><a href="#">Certification</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Sectors
+                                    <span class="drop-icon">▾</span>
+                                    <label title="Toggle Drop-down" class="drop-icon" for="sm4">▾</label>
+                                </a>
+                                <input type="checkbox" id="sm4">
+                                <ul class="sub-menu">
+                                    <li><a href="#">Industry
+                                            <span class="drop-icon">▾</span>
+                                            <label title="Toggle Drop-down" class="drop-icon" for="sm5">▾</label>
+                                        </a>
+                                        <input type="checkbox" id="sm5">
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Wires and Cables</a></li>
+                                            <li><a href="#">Electrical Products</a></li>
+                                            <li><a href="#">Transformers</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">EPC
+                                            <span class="drop-icon">▾</span>
+                                            <label title="Toggle Drop-down" class="drop-icon" for="sm6">▾</label>
+                                        </a>
+                                        <input type="checkbox" id="sm6">
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Power Generation</a></li>
+                                            <li><a href="#">Transmission & Distribution</a></li>
+                                            <li><a href="#">Renewable Energy</a></li>
+                                            <li><a href="#">Construction &
+                                                    Infrastructure</a></li>
+                                            <li><a href="#">Oil & Gas</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Technology
+                                            <span class="drop-icon">▾</span>
+                                            <label title="Toggle Drop-down" class="drop-icon" for="sm7">▾</label>
+                                        </a>
+                                        <input type="checkbox" id="sm7">
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Smart Energy Management</a></li>
+                                            <li><a href="#">Data Centers</a></li>
+                                            <li><a href="#">Smart City & AI</a></li>
+                                            <li><a href="#">The Cloud</a></li>
+                                            <li><a href="#">Big Data Analytics</a></li>
+                                            <li><a href="#">Blockchain</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Investment
+                                            <span class="drop-icon">▾</span>
+                                            <label title="Toggle Drop-down" class="drop-icon" for="sm8">▾</label>
+                                        </a>
+                                        <input type="checkbox" id="sm8">
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Independent Power Producers</a></li>
+                                            <li><a href="#">Utilities Development</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Development
+                                            <span class="drop-icon">▾</span>
+                                            <label title="Toggle Drop-down" class="drop-icon" for="sm9">▾</label>
+                                        </a>
+                                        <input type="checkbox" id="sm9">
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Industrial</a></li>
+                                            <li><a href="#">Logistical</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                            <li><a href="#">Media
+                                    <span class="drop-icon">▾</span>
+                                    <label title="Toggle Drop-down" class="drop-icon" for="sm10">▾</label>
+                                </a>
+                                <input type="checkbox" id="sm10">
+                                <ul class="sub-menu">
+                                    <li><a href="#">News Room</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Publications</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Support
+                                    <span class="drop-icon">▾</span>
+                                    <label title="Toggle Drop-down" class="drop-icon" for="sm11">▾</label>
+                                </a>
+                                <input type="checkbox" id="sm11">
+                                <ul class="sub-menu">
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Investors</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a class="" href="#">Privacy policy</a></li>
+                            <li><a class="" href="#">Terms & services</a></li>
+
+                            <li><a href="#">Language
+                                    <span class="drop-icon">▾</span>
+                                    <label title="Toggle Drop-down" class="drop-icon" for="sm12">▾</label>
+                                </a>
+                                <input type="checkbox" id="sm12">
+                                <ul class="sub-menu">
+                                    <li><a href="#">Arabic</a></li>
+                                    <li><a href="#">English</a></li>
+                                </ul>
+                            </li>
+
+
+
+                        </ul>
+                    </nav>
