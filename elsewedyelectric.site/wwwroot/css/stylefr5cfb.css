@@ -1,0 +1,89 @@
+  .factoryBut .bgMapIcons{
+    background: url("https://www.elsewedyelectric.com/media/4284/factorybut1.png");
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+  }
+  
+  .factoryBut .bgMapIcons:hover{
+    background: url("https://www.elsewedyelectric.com/media/4285/factorybut1-hover.png");
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-color: #90107b;
+  }
+
+  .projectBut .bgMapIcons{
+    background: url("https://www.elsewedyelectric.com/media/4288/projectbut1.png");
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .projectBut .bgMapIcons:hover{    
+    background: url("https://www.elsewedyelectric.com/media/4289/projectbut1-hover.png");
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-color: #ff9c00;
+  }
+
+  .officeBut .bgMapIcons{
+    background: url("https://www.elsewedyelectric.com/media/4286/officebut1.png");
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+  }
+  
+  .officeBut .bgMapIcons:hover{    
+    background: url("https://www.elsewedyelectric.com/media/4287/officebut1-hover.png");
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-color: #47902e;
+  }
+
+  .exportBut .bgMapIcons{
+    background: url("https://www.elsewedyelectric.com/media/4290/exportbut1.png");
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+  }
+  
+  .exportBut .bgMapIcons:hover{    
+    background: url("https://www.elsewedyelectric.com/media/4291/exportbut1-hover.png");
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+	background-color: #cfaf96;
+  }
+
+.right-buttons {
+		padding-right: 5px!important;
+		padding-left: 5px!important;
+	}
+.right-buttons ul {
+		padding-inline-start: 25px;
+	}
+.dropbtn-menu {
+	padding: 25px 21px;
+}	
+
+@media (max-width:1199px) {
+	.right-buttons,.notImpMenu {
+		padding-right: 5px!important;
+		padding-left: 5px!important;
+	}
+	.dropbtn-menu {
+		padding: 25px 21px;
+	}
+}
+/*
+@media (min-width: 768px) and (max-width:1199px) {
+	.container > .navbar-collapse{
+		margin-right: -63px;
+    	margin-left: -63px;
+	}
+}*/
+

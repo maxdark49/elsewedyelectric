@@ -1,0 +1,85 @@
+@inherits UmbracoViewPage<IHeaderProperties>
+
+  @{
+          var homepage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
+          //var children = homepage?.Children?.Where(x=>x.IsVisible()) ?? Enumerable.Empty<IPublishedContent>();
+            var children = homepage?.MainNavigation;
+  }  
+   <!-- Page Header-->
+<header>
+        <nav id="mainMenu-nav" class="navbar navbar-fixed-top">
+
+            <div class="container-fluid main-header">
+                <div class="site-nav-wrapper">
+
+                    <div class="container">
+                        <div class="row header-options">
+
+                            <div class="logo-home col-md-2 col-sm-3">
+                                <a class="logo-home-inner" href="@homepage.Url()">
+               <img src="@homepage.HeaderImage.Url()" style="height:80px; width:80px ;" alt="logo">
+                                </a>
+                            </div>
+
+                            <div class="col-md-5 col-sm-4 search-box">
+                                <div class="search-box-inner">
+                                    <a href="">
+                                        <div class="search-icon"></div>
+                                    </a>
+
+                                    <input class="search-box-input" type="text" id="form-name" name="name"
+                                        placeholder="Search in Elsewedy Technology">
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-5 col-sm-5 right-buttons">
+                                <div class="right-buttons-inner">
+                                    <ul>
+                                        <li><a class="li1" href="">Investors</a>|</li>
+                                        <li><a class="li2" href="">Careers</a></li>
+                                        <li>
+                                            <img src="~/img/language-icon.png" alt="language">
+                                            <select id="soflow">
+
+                                                <option value="0">En</option>
+                                                <option value="1">Ar</option>
+
+                                            </select>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row">
+                        <div class="line-separator"></div>
+                    </div>
+
+                
+
+@await Html.PartialAsync("~/Views/Partials/navigation.cshtml")
+
+
+
+
+           
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </nav>
+ </header>

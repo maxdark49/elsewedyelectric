@@ -14934,11 +14934,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Mohamed\\source\\repos\\elsewedyelectric\\elsewedyelectric.site\\elsewedyelectric.site.csproj",
+      "projectUniqueName": "C:\\Users\\Mohamed\\source\\repos\\elsewedyelectric\\elsewedyelectric.site\\elsewedyelectric.site.csproj",
       "projectName": "elsewedyelectric.site",
-      "projectPath": "c:\\Users\\Mohamed\\source\\repos\\elsewedyelectric\\elsewedyelectric.site\\elsewedyelectric.site.csproj",
+      "projectPath": "C:\\Users\\Mohamed\\source\\repos\\elsewedyelectric\\elsewedyelectric.site\\elsewedyelectric.site.csproj",
       "packagesPath": "C:\\Users\\Mohamed\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Mohamed\\source\\repos\\elsewedyelectric\\elsewedyelectric.site\\obj\\",
+      "outputPath": "C:\\Users\\Mohamed\\source\\repos\\elsewedyelectric\\elsewedyelectric.site\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

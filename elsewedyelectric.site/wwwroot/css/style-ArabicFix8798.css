@@ -1,0 +1,95 @@
+.title-grneral-container{
+  margin-left: 0px;
+  margin-right: 15px;
+}
+
+h4 {
+  font-size: 30px;
+  font-family: "Dubai";
+  font-weight: bold;
+}
+
+
+.start-description-inner p{
+  font-family: "Dubai";
+  font-weight: 500;
+
+}
+
+
+h1 {
+  
+  font-family: "Dubai";
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 20px;
+  font-family: "Dubai";
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.checkbox-container{
+  padding-right: 35px !important;
+  padding-left: 15px !important;
+}
+
+.checkmark{
+  right: 0;
+    left: auto;
+}
+
+select#soflow3, select{
+  background-position: 2% center;
+}
+
+.required:after{
+  right: auto;
+    left: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.column .inner-link{
+  font-size: 17px;
+  font-family: "Dubai";
+    font-weight: bold;
+}
+
+.history-one-item p{
+  direction: rtl;
+}
+
+#arabicBody .contact-ho-inner ul li p {
+  float: right;
+  direction: ltr;
+}
+
+.location-side-tel .location-data{
+  direction: ltr;
+}
+
+.one-topIcon-downDesc-number-inner h4{
+  font-size: 30px;
+}
+
+#arabicBody .history-list-items{
+  direction: rtl; 
+}
+
+
+.title-grneral-container,.start-description-inner{
+  direction: rtl;
+}

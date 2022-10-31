@@ -1,0 +1,1079 @@
+
+@font-face {
+  font-family: 'Dubai';
+  src: url('https://www.elsewedyelectric.com/fonts/Dubai-Bold.eot');
+  src: url('https://www.elsewedyelectric.com/fonts/Dubai-Bold.eot?#iefix') format('embedded-opentype'),
+      url('https://www.elsewedyelectric.com/fonts/Dubai-Bold.woff2') format('woff2'),
+      url('https://www.elsewedyelectric.com/fonts/Dubai-Bold.woff') format('woff'),
+      url('https://www.elsewedyelectric.com/fonts/Dubai-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dubai';
+  src: url('https://www.elsewedyelectric.com/fonts/Dubai-Medium.eot');
+  src: url('https://www.elsewedyelectric.com/fonts/Dubai-Medium.eot?#iefix') format('embedded-opentype'),
+      url('https://www.elsewedyelectric.com/fonts/Dubai-Medium.woff2') format('woff2'),
+      url('https://www.elsewedyelectric.com/fonts/Dubai-Medium.woff') format('woff'),
+      url('https://www.elsewedyelectric.com/fonts/Dubai-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dubai';
+  src: url('https://www.elsewedyelectric.com/fonts/Dubai-Light.eot');
+  src: url('https://www.elsewedyelectric.com/fonts/Dubai-Light.eot?#iefix') format('embedded-opentype'),
+      url('https://www.elsewedyelectric.com/fonts/Dubai-Light.woff2') format('woff2'),
+      url('https://www.elsewedyelectric.com/fonts/Dubai-Light.woff') format('woff'),
+      url('https://www.elsewedyelectric.com/fonts/Dubai-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dubai';
+  src: url('https://www.elsewedyelectric.com/fonts/Dubai-Regular.eot');
+  src: url('https://www.elsewedyelectric.com/fonts/Dubai-Regular.eot?#iefix') format('embedded-opentype'),
+      url('https://www.elsewedyelectric.com/fonts/Dubai-Regular.woff2') format('woff2'),
+      url('https://www.elsewedyelectric.com/fonts/Dubai-Regular.woff') format('woff'),
+      url('https://www.elsewedyelectric.com/fonts/Dubai-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+#arabicBody .header-slider-inner {
+  direction: ltr;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#arabicBody .search-icon{
+  right: auto;
+  left: 10px;
+}
+
+#arabicBody .right-buttons-inner ul li{
+  float: right;
+}
+
+#arabicBody .li1{
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+#arabicBody .li2{
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+#arabicBody .languageli{
+  padding-left: 0;
+  padding-right: 20px;
+  
+}
+
+#arabicBody select#soflow{
+  background-position: 4% center;
+}
+
+
+#arabicBody .menu-dropdown{
+  float: right;
+}
+
+#arabicBody .column{
+  float: right;
+}
+
+#arabicBody .column .inner-inner-link{
+  text-align: right;
+}
+
+#arabicBody .slider-content{
+  text-align: right;
+}
+
+
+
+#arabicBody .slider-subTitle{
+  width: auto;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.firest-message-left-side .left-side-inner{
+  text-align: right;
+  direction: ltr;
+}
+
+#arabicBody .firest-message-inner span{
+  text-align: right;
+  
+}
+
+#arabicBody .firest-message-left-side .left-side-inner .span2{
+  
+  
+}
+
+#arabicBody .firest-message-left-side .left-side-inner h2{
+  text-align: right;
+}
+
+#arabicBody .title-grneral-flued{
+  margin-left: auto;
+  margin-right: 10px;
+  
+}
+
+#arabicBody .col-s{
+float: right;
+}
+
+#arabicBody .box-item-element .box-item .box-item-content{
+  text-align: right;
+}
+
+#arabicBody .box-item-element .box-item .find-more p{
+  float: right;
+  padding-right: 0;
+  padding-left: 4px;
+}
+
+#arabicBody .box-item-element .box-item .find-more i{
+  float: right;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#arabicBody .title-map{
+  padding-right: 40px;
+  padding-left: 0;
+}
+
+#arabicBody .title-grneral-container{
+  margin-right: 15px;
+  margin-left: 0;
+}
+
+#arabicBody .title-highlight{
+  padding-left: 0;
+  padding-right: 15px;
+}
+
+#arabicBody .left-bottom-whitebox{
+  left: auto;
+  right: 0;
+}
+
+#arabicBody .left-bottom-whitebox-inner{
+  left: 0;
+  right: 20px;
+}
+
+#arabicBody .left-bottom-whitebox-inner .find-more{
+  float: right;
+}
+
+#arabicBody .left-bottom-whitebox .find-more p{
+  float: right;
+  margin-left: 0;
+  padding-left: 4px;
+}
+
+#arabicBody .left-bottom-whitebox .find-more i{
+  float: right;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#arabicBody .right-bottom-redbox-inner .find-more{
+  float: right;
+}
+
+#arabicBody .right-bottom-redbox-inner .find-more p{
+  float: right;
+  margin-left: 0;
+  padding-left: 4px;
+}
+
+#arabicBody .right-bottom-redbox-inner .find-more i{
+  float: right;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#news-list-items{
+  direction: ltr;
+}
+
+
+.news-one-item-inner{
+  text-align: right;
+}
+
+#arabicBody .news-one-item-inner .find-more p{
+  float: right;
+  margin-left: 0;
+  padding-left: 4px;
+}
+
+#arabicBody .news-one-item-inner .find-more i{
+  float: right;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#arabicBody .bottom-navigation-home-inner .left-side .upper-part ul a{
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+
+#arabicBody .bottom-navigation-home-inner .left-side .lower-part ul a{
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+
+#arabicBody .bottom-navigation-home-inner .right-side{
+  text-align: left;
+}
+
+#arabicBody .newsletter-home{
+  text-align: right;
+}
+
+#arabicBody .input-email-home{
+  float: right;
+}
+
+#arabicBody #toggle-menu .drop-icon{
+  right: auto;
+  left: 15px;
+}
+
+#arabicBody #menu .main-menu{
+  text-align: right;
+}
+
+#arabicBody #menu li label.drop-icon{
+  left: 1.5em;
+  right: auto;
+}
+
+
+
+
+
+
+
+html,
+body {
+    font-family: "Dubai";
+   font-weight: 500;
+}
+
+ h1 {
+  font-size: 30px;
+  font-family: "Dubai";
+  font-weight: bold;
+}
+
+
+/* black bold upper */
+ h2 {
+  font-size: 20px;
+  font-family: "Dubai";
+}
+
+
+/* white bold lower */
+ h3 {
+  font-size: 20px;
+  font-family: "Dubai";
+  font-weight: bold;
+}
+
+
+/* black bold upper */
+ h4 {
+  font-size: 30px;
+  font-family: "Dubai";
+  font-weight: bold;
+}
+
+/* black bold lower */
+ h5 {
+  font-size: 20px;
+  font-family: "Dubai";
+  font-weight: bold;
+}
+
+ h6 {
+  font-size: 16px;
+  font-family: "Dubai";
+  font-weight: 500;
+}
+
+
+
+ p {
+  font-family: "Dubai";
+  font-weight: 500;
+  font-size: 16px;
+}
+
+ li{
+  font-family: "Dubai";
+  font-weight: 500;
+  font-size: 16px;
+}
+
+ div {
+  font-family: "Dubai";
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#arabicBody .btn-Cw-Bt-to-Cb-Bw {
+  font-family: "Dubai";
+  font-weight: 500;
+  font-size: 12px;
+}
+
+#arabicBody .btn-Cb-Bt-to-Cw-Bb {
+  font-family: "Dubai";
+  font-weight: 500;
+  font-size: 12px;
+}
+
+#arabicBody .btn-share {
+  font-family: "Dubai";
+  font-weight: bold;
+  font-size: 12px;
+  direction: ltr;
+}
+
+#arabicBody .btn-Cw-Bu-to-Cb-Bw {
+  font-family: "Dubai";
+  font-weight: 500;
+  font-size: 12px;
+}
+
+#arabicBody .btn-newsletter-home {
+  font-family: "Dubai";
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#arabicBody .btn-request {
+  font-family: "Dubai";
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#arabicBody .search-box-inner {
+  font-family: "Dubai";
+  font-weight: 500;
+}
+
+#arabicBody .li1 {
+  margin-right: 5px;
+  font-family: "Dubai";
+  font-weight: normal;
+}
+
+#arabicBody .li2 {
+  margin-left: 5px;
+  font-family: "Dubai";
+  font-weight: 500;
+}
+
+#arabicBody .navbar-menu {
+  
+  font-family: "Dubai";
+  font-weight: bold;
+ 
+}
+
+#arabicBody .homeBut-menu {
+  
+  font-size: 15px;
+  font-family: "Dubai";
+  font-weight: bold;
+  
+}
+
+#arabicBody .dropbtn-menu {
+  
+  font-family: "Dubai";
+  font-weight: bold;
+  font-size: 18px;
+  
+}
+
+#arabicBody .column .inner-inner-link {
+  font-family: "Dubai";
+  font-weight: 500;
+  font-size: 14px;
+  
+}  
+
+
+#arabicBody #arabicBody .column .inner-link {
+  font-family: "Dubai";
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#arabicBody #toggle-menu {
+  font-size: 14px;
+  font-family: "Dubai";
+  font-weight: bold;
+  
+}
+
+#arabicBody #menu ul li {
+  font-size: 14px;
+  font-family: "Dubai";
+  font-weight: bold;
+  
+}
+
+#arabicBody #menu .sub-menu li {
+  font-size: 14px;
+  font-family: "Dubai";
+  font-weight: 500;
+ 
+}
+
+#arabicBody .bottom-navigation-home-inner .left-side .upper-part ul a {
+  
+  font-family: "Dubai";
+  font-weight: bold;
+  
+}
+
+#arabicBody .bottom-navigation-home-inner .left-side .lower-part ul a {
+  
+  font-family: "Dubai";
+  font-weight: 300;
+ 
+}
+
+#arabicBody .nav-top-breadcrumbs-inner ul {
+  font-family: "Dubai";
+  font-weight: 500;
+  font-size: 12px;
+  
+}
+
+#arabicBody .list-of-links-icon-title .link-item .link-item-inner span {
+  
+  font-size: 24px;
+  font-family: "Dubai";
+  font-weight: bold;
+  
+}
+
+#arabicBody .start-description-inner p {
+ 
+  font-family: "Dubai";
+  font-weight: 500;
+}
+
+
+
+
+#arabicBody .start-description-inner ul {
+  
+  font-size: 16px;
+  font-family: "Dubai";
+  font-weight: 500;
+}
+
+#arabicBody .range-content-section ul {
+  
+  font-size: 16px;
+  
+  font-family: "Dubai";
+  font-weight: 500;
+}
+
+#arabicBody #arabicBody .panel-content-section ul {
+  font-family: "Dubai";
+  font-weight: 500;
+}
+
+#arabicBody .plain-content-section ul {
+  font-family: "Dubai";
+  font-weight: 500;
+}
+
+#arabicBody .range-item p {
+  font-size: 14px;
+  font-family: "Dubai";
+  font-weight: bold;
+}
+
+#arabicBody .title-description-content h4 span {
+  font-family: "Dubai";
+  font-weight: 500;
+}
+
+#arabicBody .end_timeline .startDate span {
+  font-size: 20px;
+  font-family: "Dubai";
+  font-weight: bold;
+}
+
+#arabicBody .end_timeline .startDate span {
+  font-size: 20px;
+  font-family: "Dubai";
+  font-weight: bold;
+}
+
+#arabicBody .timeline_box .date {
+  font-size: 28px;
+  font-family: "Dubai";
+  font-weight: bold;
+  
+}
+
+#arabicBody .timeline_box .htitle {
+  font-weight: bold;
+}
+
+#arabicBody .butNews-inner a {
+  font-family: "Dubai";
+  font-weight: bold;
+  
+}
+
+#arabicBody .oneOfThreeLists-inner ul {
+  
+  font-size: 16px;
+  font-family: "Dubai";
+  font-weight: 500;
+}
+
+#arabicBody select#soflow2 {
+  font-family: "Dubai";
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#arabicBody .inputForm-main input {
+  font-family: "Dubai";
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#arabicBody select#soflow3 {
+  
+  font-family: "Dubai";
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#arabicBody .btn-form-contactus {
+  font-family: "Dubai";
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#arabicBody strong { 
+  font-family: 'Dubai';
+  font-weight: bold;
+  font-style: normal;
+}
+
+#arabicBody .row-content-bg ul {
+  font-family: "Dubai";
+  font-weight: 500;
+}
+
+#arabicBody .product-description-inner .btn-Cw-Bu-to-Cb-Bw {
+  font-family: "Dubai";
+  font-weight: 500;
+  font-size: 12px;
+}
+
+#arabicBody .left-main-t p, #arabicBody .right-main-t p{
+  font-family: 'Dubai';
+  font-weight: bold;
+}
+
+#arabicBody .search-box-input{
+  font-weight: 300;
+}
+
+#arabicBody .languageli{
+  padding-right: 5px;
+}
+
+#arabicBody .right-buttons-inner ul{
+  padding: 0;
+  margin: 0;
+}
+
+#arabicBody .right-buttons-inner{
+  text-align: left;
+}
+
+#arabicBody .notImpMenu-inner{
+  text-align: left;
+  display: inline-block;
+}
+
+#arabicBody .right-buttons{
+  text-align: left;
+}
+
+#arabicBody .right-buttons ul{
+  display: inline-block;
+  text-align: left;
+}
+
+#arabicBody .notImpMenu{
+  text-align: left;
+}
+
+#arabicBody .one-topIcon-downDesc-number-inner p{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#arabicBody .title-grneral-container h4{
+  padding-top: 5px;
+}
+
+#arabicBody .left-bottom-whitebox-inner h3{
+  font-size: 34px;
+}
+
+#arabicBody .right-bottom-redbox-inner .box-item-title{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#arabicBody .joinus-main-content-inner p{
+  margin-bottom: 10px;
+}
+
+#arabicBody .news-one-item-inner p{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+
+#arabicBody .news-one-item-inner .find-more p{
+  margin: 0 0 0 0px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#arabicBody .input-email-home input{
+  width: 100% !important;
+}
+
+#arabicBody .footer-home-inner .footer-home-inner-text p{
+  font-weight: 300;
+  font-size: 14px;
+}
+
+
+#arabicBody .firest-message-left-side .left-side-inner .span1{
+  font-family: "Helvetica";
+    font-weight: bold;
+}
+
+#arabicBody .firest-message-left-side .left-side-inner .span2{
+  font-family: "Helvetica";
+    font-weight: bold;
+}
+
+#arabicBody .pdf-btn img{
+  float: right;
+}
+
+
+#arabicBody .pdf-btn div{
+  float: right;
+  margin-left: 0;
+  margin-right: 10px;
+
+}
+
+#arabicBody .nav-top-breadcrumbs-inner .container ul{
+  text-align: right;
+  display: inline-block;
+}
+
+#arabicBody .nav-top-breadcrumbs-inner ul li{
+  float: right;
+}
+
+#arabicBody .nav-top-breadcrumbs-inner ul li span i{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#arabicBody .breadcrumbs-home a{
+  padding-right: 0 !important;
+  padding-left: 15px !important;
+  
+}
+
+#arabicBody .breadcrumbs-home{
+  padding-top: 3px;
+  
+}
+
+#arabicBody .title-row-container-inbody-inner{
+  margin-left: 0;
+  margin-right: 15px;
+  
+}
+
+#arabicBody .title-row-container-inbody-inner h5{
+  font-size: 24px;
+  
+}
+
+#arabicBody .news-inner-date {
+  float: right;
+}
+
+#arabicBody .news-share-but {
+  float: left;
+}
+
+#arabicBody .contactusPage-filter-inner{
+  text-align: right;
+}
+
+#arabicBody .contact-filter-title{
+  float: right;
+}
+
+#arabicBody .soflow2-main{
+  float: right;
+}
+
+#arabicBody .contactusPage-filter-inner select#soflow2{
+  margin-left: 0;
+  margin-right: 15px;
+  background-position: 4% center;
+}
+
+
+select#_Country {
+  
+  background-position: 1% center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  
+}
+
+#arabicBody .contact-ho-inner{
+  text-align: right;
+}
+
+#arabicBody .contact-ho-inner ul li h5{
+  float: right;
+}
+
+#arabicBody .contact-ho-inner ul li p{
+  float: right;
+}
+
+#arabicBody .float-left {
+  float: right;
+}
+
+#arabicBody .contact-ho-inner div{
+  width: 100%;
+  display: inline-block;
+}
+
+#arabicBody .contact-ho-inner p{
+  font-weight: 300;
+}
+
+#arabicBody .feedbackform .required:after{
+  left: 0;
+  right: 6px;
+}
+
+.panel-heading .accordion-toggle h4:after{
+  float: left;
+}
+
+.one-of-3-but-in-row .one-but-item-content .find-more p{
+  float: right;
+  padding-right: 0px;
+  padding-left: 4px;
+}
+
+.one-but-item-content .find-more i{
+  float: right;
+  margin-left: 0px;
+  margin-right: 5px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.list-of-links-icon-title .link-item .link-item-inner i{
+  right: auto;
+  left: 0;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  top: 14%;
+}
+
+.pdf-left-img-content, .pdf-right-img-content{
+  left: auto;
+  right: 20px;
+}
+
+.timelineArabicPage .content-box-top-down{
+  direction: ltr;
+}
+
+.timelineArabicPage .content-box-top-down .col-sm-offset-6{
+  margin-right: 0;
+    margin-left: 50%;
+}
+
+
+.timelineArabicPage .timeline_bar .text-right{
+  float: left;
+}
+
+.timelineArabicPage .timeline_box{
+  text-align: right;
+}
+
+
+#arabicBody .tab a.active{
+  border-left: none !important;
+  border-right: 1px solid #d71920 !important;
+}
+
+#arabicBody .list-threePicsInOneRow-items{
+  padding-right: 0;
+    padding-left: 25px;
+}
+
+.location-side-tel .location-title, .location-side-fax .location-title, .location-side-email .location-title, .location-side-tel .location-data, .location-side-fax .location-data, .location-side-email .location-data {
+  float: right;
+}
+
+#arabicBody .location-item-inner .item h5{
+  float: right;
+}
+
+#arabicBody .location-item-inner .item p{
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+/* map  */
+ .factoryBut .bgMapIcons{
+    width: 100%;
+    height: 100px;
+    background: url("https://www.elsewedyelectric.com/media/4538/factorybut1.png");
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  
+  .factoryBut .bgMapIcons:hover{    
+    background: url("https://www.elsewedyelectric.com/media/4539/factorybut2.png");
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-color: #90107b;
+    
+  }
+    
+  .projectBut .bgMapIcons{
+    width: 100%;
+    height: 100px;
+    background: url("https://www.elsewedyelectric.com/media/4542/projectbut1.png");
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  .projectBut .bgMapIcons:hover{
+    
+    background: url("https://www.elsewedyelectric.com/media/4535/projectbut2.png");
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-color: #ff9c00;
+    
+  }
+  
+  
+  .officeBut .bgMapIcons{
+    
+    width: 100%;
+    height: 100px;
+    background: url("https://www.elsewedyelectric.com/media/4540/officebut1.png");
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  
+  .officeBut .bgMapIcons:hover{
+    
+    background: url("https://www.elsewedyelectric.com/media/4541/officebut2.png");
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-color: #47902e;
+    
+  }
+  
+  
+  .exportBut .bgMapIcons{
+    
+    width: 100%;
+    height: 100px;
+    background: url("https://www.elsewedyelectric.com/media/4536/exportbut1.png");
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  
+  .exportBut .bgMapIcons:hover{
+    
+    background: url("https://www.elsewedyelectric.com/media/4537/exportbut2.png");
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-color: #cfaf96;
+    
+  }
+  
+  .factoryOver{
+    
+    background: url("https://www.elsewedyelectric.com/media/4539/factorybut2.png") !important;
+    background-position: center !important;
+    background-size: fill !important;
+    background-repeat: no-repeat !important;
+    background-color: #90107b !important;
+  
+  }
+  
+  .projectOver{
+    
+    background: url("https://www.elsewedyelectric.com/media/4535/projectbut2.png") !important;
+    background-position: center !important;
+    background-size: fill !important;
+    background-repeat: no-repeat !important;
+    background-color: #ff9c00 !important;
+  }
+  
+  .officeOver{
+    
+    background: url("https://www.elsewedyelectric.com/media/4541/officebut2.png") !important;
+    background-position: center !important;
+    background-size: fill !important;
+    background-repeat: no-repeat !important;
+    background-color: #47902e !important;
+  }
+  
+  .exportOver{
+    
+    background: url("https://www.elsewedyelectric.com/media/4537/exportbut2.png") !important;
+    background-position: center !important;
+    background-size: fill !important;
+    background-repeat: no-repeat !important;
+    background-color: #cfaf96 !important;
+  }
+
+
+/* Name black bold */
+
+#arabicBody .firest-message-left-side .left-side-inner .span1{
+  font-family: "Dubai";
+  font-weight: bold;
+  font-size: 58px;
+}
+
+#arabicBody .firest-message-left-side .left-side-inner .span2{
+  font-family: "Dubai";
+  font-weight: bold;
+  letter-spacing: 0px;
+  font-size: 60px;
+}
+
+#arabicBody .firest-message-left-side .left-side-inner h2{
+  text-align: left;
+}
+
+
+.tab-right {
+  padding-left: 0;
+  padding-right: 15px;
+}
+
+.tab-left-out .tab{
+  float: unset;
+}
+
+.side-Nav-row .tab-right .one-pdf-item-inner-but a{
+  padding: 12px 26px 12px 26px;
+    -webkit-transition: all .5s;
+    display: inline-block;
+}
+
+.tab-left .tablinks div{
+  text-align: right;
+}
+
+.product-description-inner .one-pdf-item{
+  height: 350px;
+}
+
+.regiontel,.regiontel a{
+	direction: ltr;
+}
+
+.firest-message-right-side p{
+padding-right: 10px;
+}

@@ -5,20 +5,16 @@
             var children = homepage?.MainNavigation;
   }
   <!-- Navigation-->
-  
-                    <div class="container site-menu">
+                     <div class="container site-menu">
                         <div class="collapse navbar-collapse">
 
                             <div class="navbar-menu">
                                 <div class="navbar-menu-inner">
-          <a class="homeBut-menu" href="@homepage.Homepagelink.Url">@homepage?.FirstLabel</a>
-                                   
-                                            <div class="menu-dropdown">
-                                        <button class="dropbtn-menu">@homepage?.Secondlabel</button>
-                                     <div class="container megaMenu-drop dropdown-content">
-
-    
-    <div class=row>
+        <a class="homeBut-menu" href="@homepage.Homepagelink.Url">@homepage?.FirstLabel</a>
+                                    <div class="menu-dropdown">
+                                        <div class="dropbtn-menu"><a >@homepage?.Secondlabel</a></div>
+                                        <div class="container megaMenu-drop dropdown-content">
+    <div class="row g-1">
     
         <div class="column">
          <a class="" href="@children.ElementAt(0).Link.Url">
@@ -61,11 +57,12 @@
                <a class="inner-inner-link" href="@element.Url">@element.Name</a>
                                                  
            }
-        </div>
+            </div>
     
-    </div>
+  </div>
 
-     <div class=row>
+  
+     <div class="row g-1">
     
         <div class="column">
          <a class="" href="@children.ElementAt(4).Link.Url">
@@ -111,8 +108,7 @@
         </div>
     
     </div>
-
- <div class=row>
+ <div class="row g-1">
     
         <div class="column">
          <a class="" href="@children.ElementAt(8).Link.Url">
@@ -139,38 +135,15 @@
     
     </div>
 
+ </div>
 
-@* <div class="row">
-                                                @foreach (var item in children)
-                                                {
-                                                   int counter=0;
-
-                                                     
-                                                      <div class="column">
-                                                    <a class="" href="@item.Link.Url">
-                                                        
-                                                        <h3 class="inner-link">@item.Title</h3>
-                                                    </a>
-                                                  @foreach (var element in item.ChildrenLinks)
-                                                    {
-                                                           <a class="inner-inner-link" href="@element.Url">@element.Name</a>
-                                                 
-                                                    }
-                                                   
-                                                </div>
-                                                }
-                                              
-                                              
-                                              
-
-                                           
-                                            
-
-                                            </div>
-                                        </div> *@
+                                        </div>
                                     </div>
+                                </div>
 
-                              
+
+
+
                                 </div>
                             </div>
 
@@ -181,15 +154,18 @@
                     </div>
 
 
-                             <nav id="menu">
-                        <label for="tm" id="toggle-menu">MENU<span class="drop-icon">&#9776;</span></label>
+
+
+
+
+                    <nav id="menu">
+                        <label for="tm" id="toggle-menu">@Umbraco.GetDictionaryValue("mastertranslations")
+<span class="drop-icon">&#9776;</span></label>
                         <input type="checkbox" id="tm">
                         <ul class="main-menu clearfix">
 
-
-                            <li><a href="@homepage.Homepagelink.Url">@homepage.FirstLabel</a></li>
-
-                                    @foreach (var item in children)
+       <li><a href="@homepage.Homepagelink.Url">@homepage.FirstLabel</a></li>
+                                           @foreach (var item in children)
                                                 {
                            <li><a href="@item.Link.Url">@item.Title
                                     <span class="drop-icon">▾</span>
@@ -207,26 +183,24 @@
 
 
                                                 }
-                         
-                            <li><a href="#">Investors</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a class="" href="#">Privacy policy</a></li>
-                            <li><a class="" href="#">Terms & services</a></li>
 
-                            <li><a href="#">Language
+                            <li><a rel="noreferrer" href="http://ir.elsewedyelectric.com/elsewedyelectric/" target="_blank">Investors</a></li>
+                            <li><a rel="noreferrer" href="../careers/index.html">Careers</a></li>
+                            <li><a class="" href="../data-privacy/index.html">Data Privacy</a></li>
+                            <li><a class="" href="../cookie-policy/index.html">Cookie Policy</a></li>
+
+                            <li><a href="javasript:void(0)">Language
                                     <span class="drop-icon">▾</span>
                                     <label title="Toggle Drop-down" class="drop-icon" for="sm12">▾</label>
                                 </a>
                                 <input type="checkbox" id="sm12">
                                 <ul class="sub-menu">
-                                    <li><a href="#">Arabic</a></li>
-                                    <li><a href="#">English</a></li>
+                                    <li><a href="javascript:void(0);">English</a></li>
+                                    <li><a href="../../fr/home/index.html">Français</a></li>
+                                    <li><a href="../../ar/home/index.html">عربي</a></li>
                                 </ul>
                             </li>
 
 
-
                         </ul>
-                  
-
                     </nav>

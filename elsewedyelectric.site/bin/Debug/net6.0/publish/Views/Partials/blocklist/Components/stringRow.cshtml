@@ -1,0 +1,40 @@
+@inherits UmbracoViewPage<BlockListItem>
+
+@{
+    var row = (StringRow)Model.Content;
+      var settings =(StringRowSettings)Model.Settings;
+    if(settings?.Hide ?? false) {return;}
+    if (row.Image==null)return;
+}
+
+
+                        <div class="col-sm-2 list-threeInRow-topIcon-downDesc-number wow fadeInLeft row-eq-height" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                            <div class="one-topIcon-downDesc-number">
+                                <div class="one-topIcon-downDesc-number-inner">
+                                    <img src="@row.Image.Url()" width = "80" height = "80" class="img-responsive" alt="@row.Caption2">
+                                    <h4><span class="number-count counter">@row.Caption</span></h4>
+                                    <p>@row.Caption2</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    
+
+
+
+
+    @* <div class="row gx-4 gx-lg-5 justify-content-center"> *@
+                    @* <div class="col-md-10 col-lg-8 col-xl-7">
+                        @if(row.Link !=null)
+                        {
+                            @:<a href="@row.Link.Url" target="@row.Link.Target" title="@row.Link.Name">
+                        }
+                      <img class="img-fluid" src="@row.Image.Url()" alt="@row.Caption">
+                      <span class="caption text-muted">@row.Caption</span>
+                         @if(row.Link !=null)
+                        {
+                            @:</a>
+                        }
+                    </div>
+                </div>  *@

@@ -1,3 +1,6 @@
+using Microsoft.AspNetCore.Localization;
+using System.Globalization;
+
 namespace elsewedyelectric.site
 {
     public class Startup
@@ -47,7 +50,19 @@ namespace elsewedyelectric.site
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            var supportedCultures = new List<CultureInfo>
+        {
+            new CultureInfo("en-US"),
+            new CultureInfo("ar"),
+            new CultureInfo("fr"),
+        };
+            var localizationOptions = new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture("en-US"), //English US will be the default culture (for new visitors)
+                SupportedCultures = supportedCultures,
+                SupportedUICultures = supportedCultures
+            };
+            app.UseRequestLocalization(localizationOptions);
             app.UseUmbraco()
                 .WithMiddleware(u =>
                 {

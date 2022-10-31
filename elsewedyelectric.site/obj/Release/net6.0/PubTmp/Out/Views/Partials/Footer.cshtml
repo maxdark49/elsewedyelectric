@@ -1,0 +1,103 @@
+   @inherits UmbracoViewPage
+   @{
+          var homepage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
+
+
+    }
+    <section id="bottom-navigation-home">
+        <div class="container bottom-navigation-home-inner">
+            <div class="row bottom-navigation-home-inner-row">
+                <div class="col-md-7 col-sm-7  col-xs-0 left-side">
+                    <div class="row upper-part">
+                        <div id="upper-part-menu">
+                            <ul class="">
+                                <!--pull-right to move the menu to right-->
+                                <li><a class="" href="#">About Us</a></li>
+                                <li><a class="" href="#">Sustainability</a></li>
+                                <li><a class="" href="#">Sectors</a></li>
+                                <li><a class="" href="#">Media</a></li>
+                                <li><a class="" href="#">Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row lower-part">
+                        <div id="lower-part-menu">
+                            <ul class="">
+                                <!--pull-right to move the menu to right-->
+                                <li><a class="" href="#">Investor relations</a></li>
+                                <li><a class="" href="#">Careers</a></li>
+                                <li><a class="" href="#">Site-map</a></li>
+                                <li><a class="" href="#">Privacy policy</a></li>
+                                <li><a class="" href="#">Terms & services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-5 col-xs-12 right-side">
+                    <div class="newsletter-home">
+                        <div class="newsletter-home-inner">
+                            <form action="">
+
+                                <h6>Register for our newsletter</h6>
+                                <div class="input-email-home-out">
+                                    <div class="input-email-home">
+                                        <input type="email" class="input-email-newsletter-home" id=""
+                                            placeholder="Enter your personal Email">
+                                    </div>
+                                    <button class="btn btn-newsletter-home" type="submit">Sign Up</button>
+                                    <div class="error-message">Please enter a valid Email.</div>
+
+                                </div>
+                            </form>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer-home">
+        <div class="container footer-home-inner">
+            <div class="row footer-home-inner-row">
+                <div class="col-md-4 col-sm-3 col-xs-12 footer-home-inner-logo">
+                    <div class="logo-inner">
+                        <a class="" href="">
+                            <img src="~/img/white-logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-md-push-4 col-sm-5 col-sm-push-4 col-xs-12 footer-home-inner-social">
+                    
+                     <div class="social-inner">
+
+                        <ul class="">
+                            @foreach (var item in homepage.FooterSocialLinks)
+                            {
+                                <li><a class="" href="@item.Url">
+                                    <span class="fa-stack">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                  <i class="fab fa-@item.Network fa-stack-1x fa-inverse" ></i>
+                                  </span>
+                                </a></li>
+                            }
+                          @*  <li><a class="" href="#"><img src="~/img/social-home-1.png" alt=""></a></li>
+                            <li><a class="" href="#"><img src="~/img/social-home-2.png" alt=""></a></li>
+                            <li><a class="" href="#"><img src="~/img/social-home-3.png" alt=""></a></li>
+                            <li><a class="" href="#"><img src="~/img/social-home-4.png" alt=""></a></li>
+                            <li><a class="" href="#"><img src="~/img/social-home-5.png" alt=""></a></li>*@
+                        </ul>
+                    </div> 
+                </div>
+
+                <div class="col-md-4 col-md-pull-4 col-sm-4 col-sm-pull-5 col-xs-12  footer-home-inner-text">
+                    <div class="text-inner">
+                        <p>Copyright @DateTime.Today.Year ElsewedyTechnology.com. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>

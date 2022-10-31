@@ -1,0 +1,176 @@
+/*========================================
+    Mobile Menu
+========================================*/
+
+
+
+
+/*========================================
+    Bootstrap 3 Media Queries
+========================================*/
+
+/*
+
+col-xs (extra small) smaller than 768px will appear with the reserved value.
+
+col-sm (small) bigger than or equal 768px will appear with the reserved value but smaller than 768px will be alone in new line.
+
+col-md (medium) bigger than or equal 992px will appear with the reserved value but smaller than 992px will be alone in new line.
+
+col-lg (large) bigger than or equal 1200px will appear with the reserved value but smaller than 1200px will be alone in new line.
+
+*/
+
+/* Large devices (large desktops & laptops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* Medium devices (landscape tablets & medium desktops, from 992px to 1199px) */
+@media (min-width: 992px) and (max-width:1199px) {}
+
+/* Small devices (portrait tablets & small desktops, from 768px to 991px) */
+@media (min-width: 768px) and (max-width:991px) {}
+
+/* Extra small devices (landscape phones & portrait tablets, 767px and down) */
+@media (max-width:767px) {}
+
+
+@media (min-width: 970px) and (max-width:1199px) {
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+
+  /* Name black bold */
+
+  .left-side-inner{
+    padding-top: 0 !important;
+  }
+
+  .firest-message-left-side{
+    text-align: left;
+  }
+
+
+@media (min-width: 1200px) and (max-width:1400px) {
+
+ 
+
+
+
+}
+
+
+@media (max-width:1024px) {
+ 
+}
+
+
+
+
+
+
+
+
+/* Medium devices (landscape tablets & medium desktops, from 992px to 1199px) */
+@media (min-width: 992px) and (max-width:1199px) {
+
+
+
+
+}
+
+/* Small devices (portrait tablets & small desktops, from 768px to 991px) */
+@media (min-width: 768px) and (max-width:991px) {
+   
+}
+
+/* Extra small devices (landscape phones & portrait tablets, 767px and down) */
+@media (max-width:767px) {
+  #arabicBody .bottom-navigation-home-inner .right-side{
+    text-align: center;
+  }
+
+  .Event-DownContent-content-ColorBG {
+    text-align: right;
+  }
+
+  .oneOfTwo-news-right {
+    text-align: right;
+  }
+
+
+
+  /* Name black bold */
+
+  .left-side-inner{
+    padding-top: 0 !important;
+  }
+
+  .firest-message-left-side{
+    text-align: center;
+  }
+
+}
+
+@media (max-width:580px) {
+
+
+
+}
+
+@media (max-width:414px) and (min-width:411px) {
+  
+}
+
+@media (max-width:411px) {
+  #arabicBody .slider-content h1 span {
+    font-size: 18px;
+    
+}
+
+#arabicBody .slider-content h1{
+  font-size: 18px;
+}
+
+#arabicBody .slider-subTitle{
+  font-size: 14px;
+}
+
+#arabicBody .left-bottom-whitebox-inner h3{
+  font-size: 26px;
+}
+
+#arabicBody .right-bottom-redbox-inner .box-item-title{
+  font-size: 40px;
+}
+ 
+
+}
+
+@media (max-width:320px) {
+
+  
+
+
+}
+
+
+
