@@ -167,7 +167,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("paragraph1")]
-		public virtual string Paragraph1 => global::Umbraco.Cms.Web.Common.PublishedModels.SiteinfoProperties.GetParagraph1(this, _publishedValueFallback);
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString Paragraph1 => global::Umbraco.Cms.Web.Common.PublishedModels.SiteinfoProperties.GetParagraph1(this, _publishedValueFallback);
 
 		///<summary>
 		/// paragrpagh2

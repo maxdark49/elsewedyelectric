@@ -2102,3 +2102,6 @@ C:\Users\Mohamed\source\repos\elsewedyelectric\elsewedyelectric.site\bin\Debug\n
 C:\Users\Mohamed\source\repos\elsewedyelectric\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\Dictionary\master.config
 C:\Users\Mohamed\source\repos\elsewedyelectric\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\Dictionary\masterlayout.config
 C:\Users\Mohamed\source\repos\elsewedyelectric\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\Dictionary\mastertranslations.config
+C:\Users\Mohamed\source\repos\elsewedyelectric\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\Domains\_en-us.config
+C:\Users\Mohamed\source\repos\elsewedyelectric\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\Dictionary\findoutmore.config
+C:\Users\Mohamed\source\repos\elsewedyelectric\elsewedyelectric.site\bin\Debug\net6.0\uSync\v9\Domains\elvsystem-en_en-us_rl2fnutw.config

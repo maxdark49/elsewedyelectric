@@ -22,16 +22,33 @@ col-lg (large) bigger than or equal 1200px will appear with the reserved value b
 */
 
 /* Large devices (large desktops & laptops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+  #mobile {
+    display: none;
+  }
+  
+}
 
 /* Medium devices (landscape tablets & medium desktops, from 992px to 1199px) */
-@media (min-width: 992px) and (max-width:1199px) {}
+@media (min-width: 992px) and (max-width:1199px) {
+  #desktop {
+    display: none;
+  }
+}
 
 /* Small devices (portrait tablets & small desktops, from 768px to 991px) */
-@media (min-width: 768px) and (max-width:991px) {}
+@media (min-width: 768px) and (max-width:991px) {
+  #desktop {
+    display: none;
+  }
+}
 
 /* Extra small devices (landscape phones & portrait tablets, 767px and down) */
-@media (max-width:767px) {}
+@media (max-width:767px) {
+  #desktop {
+    display: none;
+  }
+}
 
 
 @media (min-width: 970px) and (max-width:1199px) {
@@ -39,6 +56,10 @@ col-lg (large) bigger than or equal 1200px will appear with the reserved value b
 		padding-right: 5px!important;
 		padding-left: 5px!important;
 	}
+
+  #desktop {
+    display: none;
+  }
 
 }
 

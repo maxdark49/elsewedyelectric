@@ -71,7 +71,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("textarea")]
-		public virtual string Textarea => this.Value<string>(_publishedValueFallback, "textarea");
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString Textarea => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "textarea");
 
 		///<summary>
 		/// Header Image: Enter the image for the header

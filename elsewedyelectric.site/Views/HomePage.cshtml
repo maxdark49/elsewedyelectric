@@ -10,6 +10,24 @@
 
 	Layout = "Master.cshtml";
 }
+<script>
+function changecheck(id) {
+    console.log(id);
+      var selected = document.getElementById(id)
+if(selected.checked==true)
+{
+ let sub = document.querySelectorAll('input[type=checkbox]')
+ sub.forEach(item => {
+    item.checked=false;
+    
+})
+selected.checked=true;
+}
+
+
+
+}
+</script>
  <section id="top-page-image">
 <div class="top-page-image-inner container-fluid">
 	<div class="img" style="background-image:url('@Model.HeaderImage?.Url()?anchor=center&amp;mode=crop&amp;width=1640&amp;height=850&amp;rnd=132440410630000000');"></div>
@@ -40,7 +58,7 @@
         </div>         
 					</section>
 	<section id="numbers-section">
-        <div class="container">
+        <div class="container" >
 						<div class="title-grneral-flued">
                             <h4>@Model.KeyFiguresLabel</h4>
                             <div class="red-line-top"></div>
@@ -63,7 +81,7 @@
 
 
 </section>
-<div class="container">
+<div class="container" style="padding-top: 20px;">
 <div class="title-grneral-flued">
 		<h4>@Model.Partners</h4>
 		<div class="red-line-top"></div>
@@ -71,42 +89,78 @@
 </div>
 <section class="logo-list">
 	<div class="container">
-	
-		 @* <div class="row">
-
-			<h4 style="color:red ;">@Model.Cloudname</h4>
-		@foreach (var item in cloudlist)
-		{
-			<a href="@item.Link.Url">	<img style="float:centre;" href="" src="@item.Image?.Url()"alt="@item.Title"> </a>
-		}
-		</div> *@
+	<nav id="menu" style="display:block;">
+		
+        @{
+            int rowcount=0;
+        }
+        <ul class="main-menu clearfix" style="display:block;" >
 			@foreach (var items  in datacentrelist)
 					{
+                        rowcount++;
         <div class="row" style="padding-left:100px ;">
             @{int itemscount=items.Multiimagpicker.Count();}
 
 
-				   
+                              
 
-				<h4 style="color:red ;">@items.Title</h4>
-						@foreach (var item in items.Multiimagpicker)
-						{
-									<img  style="width:10%;height:12%;"  href="#" src="@item.Url()"alt="@items.Title">
-						}
-                       
-					
+
+
+
+
+
+                  <li ><a>@items.Title<span class="drop-icon">▾</span>
+                                    <label title="Toggle Drop-down" class="drop-icon" for="@items.Key">▾</label>
+                                </a>
+                                @if(rowcount==1)
+                                {
+   <input type="checkbox" id="@items.Key" onclick='changecheck("@items.Key.ToString()")'  checked="true">
+                                }
+                                else
+                                {
+                  <input type="checkbox" onclick='changecheck("@items.Key.ToString()")'   id="@items.Key">
+
+                                }
+                                <ul class="sub-menu">
+                                    @foreach (var item in items.Multiimagpicker)
+                                                    {
+                                                      
+                       <div class="col-sm-2 list-threePicsInOneRow-items"  >
+          <div class="list-threePicsInOneRow-items-inner"  style="height:100px; width:90px;">
+       <div href="#" class="one-pic-action" style="display: flex;justify-content: center;">
+                                    <div class="one-pic-item">
+                                       
+                                        <div class="one-pic-item-inner" >
+                                          <img src="@item.Url()?"  class="img-responsive" alt=""  width="300px" height="150px">
+                                        </div>
+                                        
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                                                   
+                                                    }
+                              
+                                </ul>
+                            </li>
+
+
+
         </div>
 					}
+                    </ul>
+                    </nav>
     </div>
 </section>
-<div class="container">
+<div class="container" style="padding-top: 38px;">
 <div class="title-grneral-flued">
 		<h4>@Model.Companies</h4>
 		<div class="red-line-top"></div>
 		</div>
 </div>
-		<section class="sectors-landingpage-body">
-        <div class="content-box-top-down sectors-landingpage-body-main">
+		<section class="sectors-landingpage-body"  >
+        <div class="content-box-top-down sectors-landingpage-body-main" style="margin-top: 0px;margin-bottom: 25px;">
             <div class="sectors-landingpage-body-inner">
                 <div class="container">
                     
@@ -131,7 +185,7 @@
                                             
                                             <p></p><p>@item.Textarea</p>
                                             </a><div class="big-topic-btn"><a href="@item?.Link?.Url" class="oneOfThreeButs-upImg-ColorBG-DownContent-action">
-                                                </a><a href="@item?.Link?.Url" class="btn btn-Cw-Bu-to-Cb-Bw" title="Find Out More" role="button">Find Out More</a>
+                                                </a><a href="@item?.Link?.Url" class="btn btn-Cw-Bu-to-Cb-Bw" title="Find Out More" role="button">@Umbraco.GetDictionaryValue("findoutmore")</a>
                                             </div>
                                         </div>
                                     </div>
@@ -148,7 +202,7 @@
             </div>
         </div>
     </section>
-		<section>
+		<section id="header-slider">
   
 
 <div class="container"> 
@@ -161,7 +215,9 @@
 
   <!-- Wrapper for slides -->
  
+ 
 		@Html.GetBlockListHtml(Model.Curosellist)
 					
- </section>
-       
+
+        
+     </section>  

@@ -75,7 +75,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		/// <summary>paragraph1</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		string Paragraph1 { get; }
+		global::Umbraco.Cms.Core.Strings.IHtmlEncodedString Paragraph1 { get; }
 
 		/// <summary>paragrpagh2</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
@@ -250,12 +250,12 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("paragraph1")]
-		public virtual string Paragraph1 => GetParagraph1(this, _publishedValueFallback);
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString Paragraph1 => GetParagraph1(this, _publishedValueFallback);
 
 		/// <summary>Static getter for paragraph1</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.2.1+25a20cf")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static string GetParagraph1(ISiteinfoProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<string>(publishedValueFallback, "paragraph1");
+		public static global::Umbraco.Cms.Core.Strings.IHtmlEncodedString GetParagraph1(ISiteinfoProperties that, IPublishedValueFallback publishedValueFallback) => that.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(publishedValueFallback, "paragraph1");
 
 		///<summary>
 		/// paragrpagh2
