@@ -1,4 +1,4 @@
-@inherits UmbracoViewPage<IHeaderProperties>
+﻿@inherits UmbracoViewPage<IHeaderProperties>
 
   @{
           var homepage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
@@ -17,11 +17,11 @@
 
                             <div class="logo-home col-md-2 col-sm-3">
                                 <a class="logo-home-inner" href="@homepage.Url()">
-               <img src="@homepage.HeaderImage.Url()" style="height:80px; width:80px ;" alt="logo">
+               <img src="~/img/logo.png" alt="logo">
                                 </a>
                             </div>
 
-                            <div class="col-md-5 col-sm-4 search-box">
+                            <div class="col-md-4 col-sm-4 search-box">
                                 <div class="search-box-inner">
                                     <a href="">
                                         <div class="search-icon"></div>
@@ -33,19 +33,27 @@
                                 </div>
 
                             </div>
+                            <div class="col-md-3 col-sm-4 notImpMenu">
+                                <div class="notImpMenu-inner">
+                                    <a class="" href="/en/support/">Support</a>
+                                    <a class="" href="/en/media/">Media</a>
+                                    <a class="" href="/en/news-room/">News</a>
+                                </div>
+                            </div>
 
-                            <div class="col-md-5 col-sm-5 right-buttons">
+                         
+                            
+                            <div class="col-md-3 col-sm-4 right-buttons">
                                 <div class="right-buttons-inner">
                                     <ul>
-                                        <li><a class="li1" href="">Investors</a>|</li>
-                                        <li><a class="li2" href="">Careers</a></li>
-                                        <li>
-                                            <img src="~/img/language-icon.png" alt="language">
+                                            <li><a class="li1" rel="noreferrer" href="http://ir.elsewedyelectric.com/elsewedyelectric/" target="_blank">Investors</a>|</li>
+                                        
+                                        <li><a class="li2" href="/en/careers/">Careers</a></li>
+                                        <li class="languageli"><img src="/img/language-icon.png" alt="language">
                                             <select id="soflow">
-
-                                                <option value="0">En</option>
-                                                <option value="1">Ar</option>
-
+                                                <option value="en" selected="">En</option>
+                                                <option value="fr">Fr</option>
+                                                <option value="ar">Ar</option>
                                             </select>
                                         </li>
                                     </ul>
@@ -54,20 +62,19 @@
                                 </div>
                             </div>
 
-                        </div>
-                    </div>
+
+  </div>
+                            </div>
 
 
-
-
-                    <div class="row">
+           
+       <div class="row">
                         <div class="line-separator"></div>
                     </div>
 
                 
 
 @await Html.PartialAsync("~/Views/Partials/navigation.cshtml")
-
 
 
 

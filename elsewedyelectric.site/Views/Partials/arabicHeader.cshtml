@@ -1,0 +1,74 @@
+@inherits UmbracoViewPage<IHeaderProperties>
+
+  @{
+          var homepage = Umbraco.AssignedContentItem.AncestorOrSelf<Arabichome>();
+          //var children = homepage?.Children?.Where(x=>x.IsVisible()) ?? Enumerable.Empty<IPublishedContent>();
+            var children = homepage?.MainNavigation;
+  }  
+
+  <header>
+        <nav id="mainMenu-nav" class="navbar navbar-fixed-top">
+
+            <div class="container-fluid main-header">
+                <div class="site-nav-wrapper">
+
+                    <div class="container">
+                        <div class="row header-options">
+
+                            <div class="logo-home col-md-2 col-sm-3">
+                                <a class="logo-home-inner" href="index.html">
+                                    <img src="~/img/logo.png" alt="logo">
+                                </a>
+                            </div>
+
+                            <div class="col-md-4 col-sm-5 search-box">
+                                <div class="search-box-inner">
+                                    <a href="javascript:Search()">
+                                        <div class="search-icon"></div>
+                                    </a>
+                                    <input class="search-box-input" type="text" id="form-name" name="name"
+                                        placeholder="البحث في موقع السويدي اليكتريك">
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-3 col-sm-4 notImpMenu">
+                                <div class="notImpMenu-inner">
+                                    <a class="" href="../support/index.html">الدعم</a>
+                                    <a class="" href="../media/index.html">وسائل الإعلام</a>
+                                    <a class="" href="../news-room/index.html">الأخبار</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-4 right-buttons">
+                                <div class="right-buttons-inner">
+                                    <ul>
+                                            <li><a class="li1" rel="noreferrer" href="https://ir.elsewedyelectric.com/ar/ir-contacts"  target="_blank">المستثمرون</a>|</li>
+                                        
+                                        <li><a class="li2" href="../careers/index.html">الوظائف</a></li>
+                                        <li class="languageli"><img src="../../img/language-icon.png" alt="language">
+                                            <select id="soflow">
+                                                <option value="en" >En</option>
+                                                <option value="fr" >Fr</option>
+                                                <option value="ar" selected>Ar</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row">
+                        <div class="line-separator"></div>
+                    </div>
+                    
+                    @await Html.PartialAsync("~/Views/Partials/arabicnavigation.cshtml")

@@ -1,0 +1,135 @@
+   @inherits UmbracoViewPage
+   @{
+          var homepage = Umbraco.AssignedContentItem.AncestorOrSelf<Arabichome>();
+
+
+    }
+<section id="bottom-navigation-home">
+        <div class="container bottom-navigation-home-inner">
+            <div class="row bottom-navigation-home-inner-row">
+                <div class="col-md-7 col-sm-7  col-xs-0 left-side">
+                    <div class="row upper-part">
+                        <div id="upper-part-menu">
+                            <ul class="">
+                                <!--pull-right to move the menu to right-->
+                                            <li>
+                                                <a class="" href="#">عن الشركة</a>
+                                            </li>
+                                            <li>
+                                                <a class="" href="#">مجالات العمل</a>
+                                            </li>
+                                            <li>
+                                                <a class="" href="#">الاستدامة</a>
+                                            </li>
+                                            <li>
+                                                <a class="" href="#">التواجد العالمي</a>
+                                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row lower-part">
+                        <div id="lower-part-menu">
+                            <ul class="">
+                                <!--pull-right to move the menu to right-->
+                                <li><a class="" rel="noreferrer" href="https://ir.elsewedyelectric.com/ar/ir-contacts" target="_blank">المستثمرون</a></li>
+                                <li><a class="" href="#">الوظائف</a></li>
+                                <li><a class="" href="#">خصوصية البيانات</a></li>
+                                <li><a class="" href="#">سياسة ملفات تعريف الارتباط</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-5 col-xs-12 right-side">
+                    <div class="newsletter-home">
+                        <div class="newsletter-home-inner">
+                            <h6>التسجيل في نشرتنا الإخبارية</h6>
+                                
+
+<form method="POST" class="input-email-home-out  star-newsletter" enctype="multipart/form-data" data-form-editor="1096" id="fe_1096" novalidate>
+    
+    
+    <div class="input-email-home-out">
+    <input type="hidden" name="_antiForgeryToken" value="x3XAFDa6u2ylFp9zZMODwBOaIEO_zFRKjpsPOR2__lvWw7BVLQQoX92DRx8qSPbqMcC7fAO39Yf4kAtDPK0uA-yGsUGLRCNugl1OVdk2aiI1:3QVxX5oG10eSfKP4kOMEZgZEuzomN1MHNWMnCwnA1aCC2_vTyqvcNtlkG5atX3ODprmiOzk13K1QZV4Y9KVIcfXvULLVVTj5RbaSezERTdU1" />
+    
+    <input type="hidden" name="_id" value="1096" />
+
+<div class="form-group input-email-home required">
+  <input type="email" class="form-control input-email-newsletter-home" id="_Email" name="_Email" placeholder="البريد الإلكترونى" required />
+
+  
+  <div class="error-message text-danger validation-error hide d-none">
+  يرجى إدخال عنوان بريد إلكتروني صحيح
+</div>
+
+</div><button class="btn btn-newsletter-home" type="submit">سجل</button>
+      <div id="validationErrors" class="row error-message hide d-none">
+      </div>
+    </div>
+</form>
+  <script type="text/javascript">
+    
+    var _fe = _fe || {};
+    _fe[1096] = {};
+
+    
+    _fe[1096].validations = [];
+
+    
+    _fe[1096].actions = [];
+
+    
+    _fe[1096].totalPages = 1;
+  </script>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <footer id="footer-home">
+        <div class="container footer-home-inner">
+            <div class="row footer-home-inner-row">
+                <div class="col-md-4 col-sm-3 col-xs-12 footer-home-inner-logo">
+                    <div class="logo-inner">
+                        <a class="" href="">
+                            <img src="~/img/white-logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-md-push-4 col-sm-5 col-sm-push-4 col-xs-12 footer-home-inner-social">
+                    
+                     <div class="social-inner">
+
+                        <ul class="">
+                            @foreach (var item in homepage.FooterSocialLinks)
+                            {
+                                <li><a class="" href="@item.Url">
+                                    <span class="fa-stack">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                  <i class="fab fa-@item.Network fa-stack-1x fa-inverse" ></i>
+                                  </span>
+                                </a></li>
+                            }
+                          @*  <li><a class="" href="#"><img src="~/img/social-home-1.png" alt=""></a></li>
+                            <li><a class="" href="#"><img src="~/img/social-home-2.png" alt=""></a></li>
+                            <li><a class="" href="#"><img src="~/img/social-home-3.png" alt=""></a></li>
+                            <li><a class="" href="#"><img src="~/img/social-home-4.png" alt=""></a></li>
+                            <li><a class="" href="#"><img src="~/img/social-home-5.png" alt=""></a></li>*@
+                        </ul>
+                    </div> 
+                </div>
+
+                <div class="col-md-4 col-md-pull-4 col-sm-4 col-sm-pull-5 col-xs-12  footer-home-inner-text">
+                    <div class="text-inner">
+                        <p>حقوق النشر   السويدى  إليكتريك 2022  كل الحقوق محفوظة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+

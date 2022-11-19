@@ -12,8 +12,8 @@
 }
 <script>
 function changecheck(id) {
-    console.log(id);
-      var selected = document.getElementById(id)
+     var selected = document.getElementById(id)
+      
 if(selected.checked==true)
 {
  let sub = document.querySelectorAll('input[type=checkbox]')
@@ -27,18 +27,29 @@ selected.checked=true;
 
 
 }
+
+function changecheck2(id) {
+     var selected = document.getElementById(id)
+    selected.click();
+
+
+
+
+}
+
+
 </script>
  <section id="top-page-image">
 <div class="top-page-image-inner container-fluid">
-	<div class="img" style="background-image:url('@Model.HeaderImage?.Url()?anchor=center&amp;mode=crop&amp;width=1640&amp;height=850&amp;rnd=132440410630000000');"></div>
+	<div class="img" style="background-image:url('@Model.HeaderImage?.Url()?anchor=center&amp;rnd=132440410630000000');"></div>
 	
 	</div>
 </section>
        
-					<section id="firest-message">
+					<section id="firest-message" >
 						     <div class="content-box-top-down-padding firest-message-main">
             <div class="firest-message-inner">
-                <div class="container">
+                <div class="container"  style="padding-top: 20px;">
                     <div class="row">
                         <div class="col-sm-5 firest-message-left-side wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInLeft;">
                             <div class="left-side-inner">
@@ -58,7 +69,7 @@ selected.checked=true;
         </div>         
 					</section>
 	<section id="numbers-section">
-        <div class="container" >
+        <div class="container"  style="padding-top: 20px;" >
 						<div class="title-grneral-flued">
                             <h4>@Model.KeyFiguresLabel</h4>
                             <div class="red-line-top"></div>
@@ -81,7 +92,7 @@ selected.checked=true;
 
 
 </section>
-<div class="container" style="padding-top: 20px;">
+<div class="container" style="padding-top: 38px;">
 <div class="title-grneral-flued">
 		<h4>@Model.Partners</h4>
 		<div class="red-line-top"></div>
@@ -109,8 +120,8 @@ selected.checked=true;
 
 
 
-                  <li ><a>@items.Title<span class="drop-icon">▾</span>
-                                    <label title="Toggle Drop-down" class="drop-icon" for="@items.Key">▾</label>
+                  <li  ><a onclick='changecheck2("@items.Key.ToString()")'>@items.Title<span class="drop-icon"></span>
+                                    <label title="Toggle Drop-down" class="drop-icon" for="@items.Key"></label>
                                 </a>
                                 @if(rowcount==1)
                                 {
@@ -153,7 +164,7 @@ selected.checked=true;
                     </nav>
     </div>
 </section>
-<div class="container" style="padding-top: 38px;">
+<div class="container" style="padding-top: 52px;">
 <div class="title-grneral-flued">
 		<h4>@Model.Companies</h4>
 		<div class="red-line-top"></div>
@@ -205,7 +216,7 @@ selected.checked=true;
 		<section id="header-slider">
   
 
-<div class="container"> 
+<div class=""> 
   <div class="title-grneral-flued">
 		<h4>@Model.Cloudname</h4>
 		<div class="red-line-top"></div>

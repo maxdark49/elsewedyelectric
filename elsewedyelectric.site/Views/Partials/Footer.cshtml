@@ -1,4 +1,4 @@
-   @inherits UmbracoViewPage
+﻿   @inherits UmbracoViewPage
    @{
           var homepage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
 
@@ -45,7 +45,7 @@
                                             placeholder="Enter your personal Email">
                                     </div>
                                     <button class="btn btn-newsletter-home" type="submit">Sign Up</button>
-                                    <div class="error-message">Please enter a valid Email.</div>
+                                    <div class="error-message" style="visibility: hidden">Please enter a valid Email.</div>
 
                                 </div>
                             </form>

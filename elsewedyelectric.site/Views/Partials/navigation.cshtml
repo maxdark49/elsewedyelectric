@@ -1,4 +1,4 @@
-  @inherits UmbracoViewPage
+﻿  @inherits UmbracoViewPage
   @{
           var homepage = Umbraco.AssignedContentItem.AncestorOrSelf<HomePage>();
           //var children = homepage?.Children?.Where(x=>x.IsVisible()) ?? Enumerable.Empty<IPublishedContent>();
@@ -14,9 +14,9 @@
                                     <div class="menu-dropdown">
                                         <div class="dropbtn-menu"><a >@homepage?.Secondlabel</a></div>
                                         <div class="container megaMenu-drop dropdown-content">
-    <div class="row g-1">
+    <div class="row g-1" style="display:flex; flex-wrap:wrap">
     
-        <div class="column">
+        <div class="column" style="width:25%">
          <a class="" href="@children.ElementAt(0).Link.Url">
          <h3 class="inner-link">@children.ElementAt(0).Title</h3>
         </a>
@@ -27,7 +27,7 @@
            }
         </div>
 
-          <div class="column">
+         <div class="column" style="width:25%">
          <a class="" href="@children.ElementAt(1).Link.Url">
          <h3 class="inner-link">@children.ElementAt(1).Title</h3>
         </a>
@@ -37,7 +37,7 @@
                                                  
            }
         </div>
-          <div class="column">
+         <div class="column" style="width:25%">
          <a class="" href="@children.ElementAt(2).Link.Url">
          <h3 class="inner-link">@children.ElementAt(2).Title</h3>
         </a>
@@ -48,7 +48,7 @@
            }
         </div>
 
-          <div class="column">
+          <div class="column" style="width:25%">
          <a class="" href="@children.ElementAt(3).Link.Url">
          <h3 class="inner-link">@children.ElementAt(3).Title</h3>
         </a>
@@ -58,13 +58,7 @@
                                                  
            }
             </div>
-    
-  </div>
-
-  
-     <div class="row g-1">
-    
-        <div class="column">
+     <div class="column" style="width:25%">
          <a class="" href="@children.ElementAt(4).Link.Url">
          <h3 class="inner-link">@children.ElementAt(4).Title</h3>
         </a>
@@ -75,7 +69,7 @@
            }
         </div>
 
-          <div class="column">
+          <div class="column" style="width:25%">
          <a class="" href="@children.ElementAt(5).Link.Url">
          <h3 class="inner-link">@children.ElementAt(5).Title</h3>
         </a>
@@ -85,7 +79,7 @@
                                                  
            }
         </div>
-          <div class="column">
+          <div class="column" style="width:25%">
          <a class="" href="@children.ElementAt(6).Link.Url">
          <h3 class="inner-link">@children.ElementAt(6).Title</h3>
         </a>
@@ -96,7 +90,7 @@
            }
         </div>
 
-          <div class="column">
+          <div class="column" style="width:25%">
          <a class="" href="@children.ElementAt(7).Link.Url">
          <h3 class="inner-link">@children.ElementAt(7).Title</h3>
         </a>
@@ -107,10 +101,11 @@
            }
         </div>
     
-    </div>
- <div class="row g-1">
-    
-        <div class="column">
+  </div>
+
+  
+   
+        <div class="column" style="width:25%">
          <a class="" href="@children.ElementAt(8).Link.Url">
          <h3 class="inner-link">@children.ElementAt(8).Title</h3>
         </a>
@@ -121,7 +116,7 @@
            }
         </div>
 
-          <div class="column">
+          <div class="column" style="width:25%">
          <a class="" href="@children.ElementAt(9).Link.Url">
          <h3 class="inner-link">@children.ElementAt(9).Title</h3>
         </a>
@@ -135,7 +130,7 @@
     
     </div>
 
- </div>
+
 
                                         </div>
                                     </div>

@@ -11,7 +11,7 @@
 	</div>
 
 </section>
-<div class="container">
+<div class="container" style="padding-top: 38px;">
 		<div class="title-grneral-flued">
                             <h4>@Model.Title</h4>
                             <div class="red-line-top"></div>
@@ -22,14 +22,20 @@
 	</div>
 	</div> 
 
-			<div class="title-grneral-flued">
+		
+</div>
+	<div class="container" style="padding-top: 38px;">
+			    	<div class="title-grneral-flued">
                             <h4>@Model.Label1</h4>
                             <div class="red-line-top"></div>
                         </div>
-</div>
+			    </div
+
 			<section class="sectors-landingpage-body">
+			
+		
 				
-     <div class="container content-box-down-xs">
+     <div class="container content-box-down-xs"  >
 
             <div class="row list-of-but-3-in-row wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInRight;">                    
 @foreach (var item in Model.Imagelist1)
@@ -74,7 +80,7 @@
             <div class="row list-threePicsInOneRow-items-out">
 							@foreach (var item in @Model.Imagelist2)
 							{
-								  <div class="col-sm-4 list-threePicsInOneRow-items">
+								  <div class="col-sm-4 list-threePicsInOneRow-items"style="width:320px;">
                             <div class="list-threePicsInOneRow-items-inner">
                                 <div href="" class="one-pic-action">
                                     <div class="one-pic-item">

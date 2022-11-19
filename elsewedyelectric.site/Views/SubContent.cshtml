@@ -11,7 +11,7 @@
 	</div>
 
 </section>
-<div class="container">
+<div class="container" style="padding-top: 38px;">
 		<div class="title-grneral-flued">
                             <h4>@Model.Title</h4>
                          <div class="red-line-top"></div>
@@ -29,19 +29,14 @@
                 <div class="container">
 
                     <div class="row title-row-container wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                        @* <div class="title-grneral-container">
-                            <h4>Corporate Governance</h4>
-                            <div class="red-line-top"></div>
-                        </div>
-                    </div> *@
-
+                      
                     <div class="doThings-message-main content-box-down wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInRight;">
                         
             <div class="row big-box-leftTxt-rightImg">
                 <div class="col-md-6 left-side">
                     <div class="left-side-inner">
                      
-                       @Html.GetBlockListHtml(Model.List1);											
+                       @Html.GetBlockListHtml(Model.List1)										
 										 
                     
                     </div>

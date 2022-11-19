@@ -1,4 +1,4 @@
-@inherits UmbracoViewPage<BlockListItem>
+﻿@inherits UmbracoViewPage<BlockListItem>
 
 @{
     var row = (StringRow)Model.Content;
@@ -12,7 +12,7 @@
                             <div class="one-topIcon-downDesc-number">
                                 <div class="one-topIcon-downDesc-number-inner">
                                     <img src="@row.Image.Url()" width = "80" height = "80" class="img-responsive" alt="@row.Caption2">
-                                    <h4><span class="number-count counter">@row.Caption</span></h4>
+                                    <h4><span class="">@row.Caption</span></h4>
                                     <p>@row.Caption2</p>
                                 </div>
                             </div>

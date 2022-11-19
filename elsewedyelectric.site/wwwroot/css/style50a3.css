@@ -1740,7 +1740,7 @@ select#soflow {
 
 #top-page-image {
 
-    height: 500px;
+    height: 600px;
 }
 
     #top-page-image .top-page-image-inner {
@@ -4967,7 +4967,7 @@ select#soflow3 {
 
 .list-threePicsInOneRow-items:last-child {
     
-    padding-right: 0;
+    padding-right: -1;
     
 }
 

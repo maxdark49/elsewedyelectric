@@ -14928,24 +14928,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mohamed\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Naquib Mohammed\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mohamed\\source\\repos\\elsewedyelectric\\elsewedyelectric.site\\elsewedyelectric.site.csproj",
+      "projectUniqueName": "C:\\Users\\Naquib Mohammed\\Desktop\\elsewedyelectric\\elsewedyelectric.site\\elsewedyelectric.site.csproj",
       "projectName": "elsewedyelectric.site",
-      "projectPath": "C:\\Users\\Mohamed\\source\\repos\\elsewedyelectric\\elsewedyelectric.site\\elsewedyelectric.site.csproj",
-      "packagesPath": "C:\\Users\\Mohamed\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mohamed\\source\\repos\\elsewedyelectric\\elsewedyelectric.site\\obj\\",
+      "projectPath": "C:\\Users\\Naquib Mohammed\\Desktop\\elsewedyelectric\\elsewedyelectric.site\\elsewedyelectric.site.csproj",
+      "packagesPath": "C:\\Users\\Naquib Mohammed\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Naquib Mohammed\\Desktop\\elsewedyelectric\\elsewedyelectric.site\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Naquib Mohammed\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -15007,7 +15002,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
