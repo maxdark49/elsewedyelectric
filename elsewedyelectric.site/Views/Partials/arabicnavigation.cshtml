@@ -1,6 +1,6 @@
   @inherits UmbracoViewPage
   @{
-          var homepage = Umbraco.AssignedContentItem.AncestorOrSelf<Arabichome>();
+          var homepage = Umbraco.AssignedContentItem.AncestorOrSelf<ArabicHome>();
           //var children = homepage?.Children?.Where(x=>x.IsVisible()) ?? Enumerable.Empty<IPublishedContent>();
             var children = homepage?.MainNavigation;
   }

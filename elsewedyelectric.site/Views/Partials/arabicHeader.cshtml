@@ -1,7 +1,7 @@
 @inherits UmbracoViewPage<IHeaderProperties>
 
   @{
-          var homepage = Umbraco.AssignedContentItem.AncestorOrSelf<Arabichome>();
+          var homepage = Umbraco.AssignedContentItem.AncestorOrSelf<ArabicHome>();
           //var children = homepage?.Children?.Where(x=>x.IsVisible()) ?? Enumerable.Empty<IPublishedContent>();
             var children = homepage?.MainNavigation;
   }  
@@ -16,7 +16,7 @@
                         <div class="row header-options">
 
                             <div class="logo-home col-md-2 col-sm-3">
-                                <a class="logo-home-inner" href="index.html">
+                                <a class="logo-home-inner" href="@homepage.Url()">
                                     <img src="~/img/logo.png" alt="logo">
                                 </a>
                             </div>
